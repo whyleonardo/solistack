@@ -11,8 +11,7 @@
     "lint": "eslint . --cache --max-warnings 0"
   },
   "devDependencies": {
-    "@soli/tsconfig": "workspace:^",
-    "@soli/prettier": "workspace:*",
+    "@soli/tsconfig": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@typescript-eslint/parser": "^7.9.0",
     "eslint-config-next": "^14.2.3",
@@ -20,6 +19,5 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.2"
-  },
-  "prettier": "@soli/prettier"
+  }
 }

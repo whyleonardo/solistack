@@ -4,15 +4,17 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint --",
+    "lint": "eslint . --cache --max-warnings 0",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@soli/eslint-config": "workspace:^",
+    "@soli/eslint-config": "workspace:*",
     "@soli/tsconfig": "workspace:*",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/eslint": "^8.56.10",
     "eslint": "8.57.0",
     "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "turbo": "latest"
   },
   "engines": {
