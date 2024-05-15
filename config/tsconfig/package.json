@@ -1,8 +1,6 @@
 {
   "name": "@soli/tsconfig",
   "version": "0.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "private": true,
   "files": [
     "base.json",
