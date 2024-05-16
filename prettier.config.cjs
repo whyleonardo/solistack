@@ -6,7 +6,8 @@
 const config = {
   plugins: [
     "@trivago/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss"
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-packagejson"
   ],
   trailingComma: "none",
   tabWidth: 2,
