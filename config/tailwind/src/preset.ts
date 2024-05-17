@@ -6,7 +6,7 @@ import fluid, { extract, fontSize, screens } from "fluid-tailwind"
 import { type Config } from "tailwindcss"
 import animate from "tailwindcss-animate"
 
-export const tailwindConfig: Config = {
+export const soliTailwindPreset: Config = {
   content: {
     files: ["./src/**/*.{js,jsx,ts,tsx}"],
     extract
