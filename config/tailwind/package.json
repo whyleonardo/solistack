@@ -5,7 +5,8 @@
     ".": "./src/preset.ts"
   },
   "scripts": {
-    "lint": "eslint . --cache --max-warnings 0"
+    "lint": "eslint . --cache --max-warnings 0",
+    "typecheck": "tsc --noEmit --tsBuildInfoFile .tsbuildinfo"
   },
   "devDependencies": {
     "@soli/eslint-config": "workspace:*",

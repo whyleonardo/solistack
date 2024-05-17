@@ -1,0 +1,26 @@
+{
+  "name": "@soli/utils",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./filesystem": {
+      "types": "./dist/filesystem.d.ts",
+      "default": "./dist/filesystem.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit --tsBuildInfoFile .tsbuildinfo"
+  },
+  "dependencies": {
+    "pkg-types": "^1.1.1"
+  },
+  "devDependencies": {
+    "@soli/eslint-config": "workspace:*",
+    "@soli/tsconfig": "workspace:*",
+    "@types/node": "^20.12.12",
+    "tsup": "^8.0.2"
+  }
+}
