@@ -1,0 +1,19 @@
+{
+  "extends": ["@soli/tsconfig/react.json"],
+  "compilerOptions": {
+    "declaration": false,
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".eslintrc.cjs",
+    ".storybook/**/*",
+    "**/*.cjs"
+  ],
+  "exclude": ["dist", "node_modules", "storybook-static"]
+}
