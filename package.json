@@ -5,7 +5,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint": "eslint . --cache --max-warnings 0"
+    "lint": "eslint . --cache --max-warnings 0",
+    "ui:add": "pnpm --filter @soli/ui ui:add"
   },
   "devDependencies": {
     "@soli/eslint-config": "workspace:*",
