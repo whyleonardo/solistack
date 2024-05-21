@@ -63,6 +63,8 @@ export default defineConfig(async (options) => ({
       }
     })
 
+    pkg.exports = { ...pkg.exports, "./css": "./dist/globals.css" }
+
     await formatAndWriteWithPrettier({
       content: JSON.stringify(pkg, null, 2),
       filePath: "./package.json"

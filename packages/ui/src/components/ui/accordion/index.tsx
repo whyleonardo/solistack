@@ -1,10 +1,12 @@
 "use client"
 
 import * as React from "react"
-import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { ChevronDown } from "lucide-react"
 
 import { cn } from "@/utils/cn"
+
+import * as AccordionPrimitive from "@radix-ui/react-accordion"
+
+import { ChevronDown } from "lucide-react"
 
 const Accordion = AccordionPrimitive.Root
 
@@ -46,7 +48,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm transition-all"
     {...props}
   >
     <div className={cn("pb-4 pt-0", className)}>{children}</div>

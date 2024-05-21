@@ -8,13 +8,13 @@ const transformNewComponents = async () => {
   const componentsFolderExists = fs.existsSync("./src/components")
 
   if (!componentsFolderExists) {
-    return console.log("No exists new component to move!")
+    return console.log("There are no new components to move!")
   }
 
   const files = await listFiles("./src/components/ui")
 
   if (!files.length) {
-    return console.log("No exists new component to move!")
+    return console.log("There are no new components to move!")
   }
 
   files.forEach(async (c) => {

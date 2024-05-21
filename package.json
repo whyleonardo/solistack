@@ -3,13 +3,17 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "build-sb": "pnpm --filter ui build-storybook",
     "clean": "rimraf --glob **/node_modules **/dist **/.turbo **/.next **/.astro **/.eslintcache **/storybook-static pnpm-lock.yaml **/.tsbuildinfo **/playwright-report **/test-results",
     "commit": "git-cz",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
+    "format:write": "prettier \"**/*\" --ignore-unknown --list-different --write",
     "lint": "eslint . --cache --max-warnings 0",
     "prepare": "husky",
-    "ui:add": "pnpm --filter @soli/ui ui:add"
+    "sb": "pnpm --filter ui storybook",
+    "ui:add": "pnpm --filter ui ui:add"
   },
   "commitlint": {
     "extends": [
@@ -19,7 +23,7 @@
   },
   "lint-staged": {
     "*": [
-      "prettier --list-different"
+      "prettier --write"
     ],
     "**/*.{ts,tsx,js,jsx,cjs,mjs}": [
       "eslint"

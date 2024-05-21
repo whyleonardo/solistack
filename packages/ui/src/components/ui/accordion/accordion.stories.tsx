@@ -23,6 +23,7 @@ const items = [
 ]
 
 const meta: Meta<typeof Accordion> = {
+  title: "Primitives/Accordion",
   component: Accordion,
   args: {
     type: "single",

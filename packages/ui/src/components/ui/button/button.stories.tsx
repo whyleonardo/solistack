@@ -1,13 +1,11 @@
-import {
-  ChevronRightIcon,
-  EnvelopeOpenIcon,
-  ReloadIcon
-} from "@radix-ui/react-icons"
 import { type Meta, type StoryObj } from "@storybook/react"
+
+import { ChevronRightIcon, Loader, Mail } from "lucide-react"
 
 import { Button } from "./"
 
 const meta: Meta<typeof Button> = {
+  title: "Primitives/Button",
   component: Button,
   args: {
     children: "Button",
@@ -71,7 +69,7 @@ export const WithIcon: Story = {
   args: {
     children: (
       <>
-        <EnvelopeOpenIcon className="mr-2 h-4 w-4" /> Login with Email
+        <Mail className="mr-2 h-4 w-4" /> Login with Email
       </>
     )
   },
@@ -86,7 +84,7 @@ export const Loading: Story = {
     disabled: true,
     children: (
       <>
-        <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
+        <Loader className="mr-2 h-4 w-4 animate-spin" />
         Please wait
       </>
     )

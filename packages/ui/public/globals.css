@@ -74,3 +74,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+input[type="file"]::file-selector-button {
+  color: hsl(var(--foreground));
+}
+
+input[type="file"]::file-selector-button:hover {
+  cursor: pointer;
+}

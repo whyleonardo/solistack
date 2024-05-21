@@ -5,6 +5,7 @@ import { within } from "@storybook/test"
 import { Typography } from "./"
 
 const meta: Meta<typeof Typography> = {
+  title: "Typography/Typography",
   component: Typography,
   args: {
     variant: "p",
