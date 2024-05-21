@@ -4,6 +4,7 @@
   "scripts": {
     "build": "turbo run build",
     "clean": "rimraf --glob **/node_modules **/dist **/.turbo **/.next **/.astro **/.eslintcache **/storybook-static pnpm-lock.yaml **/.tsbuildinfo **/playwright-report **/test-results",
+    "commit": "git-cz",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "eslint . --cache --max-warnings 0",
@@ -24,6 +25,11 @@
       "eslint"
     ]
   },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
@@ -33,6 +39,7 @@
     "@soli/tsconfig": "workspace:*",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/eslint": "^8.56.10",
+    "commitizen": "^4.3.0",
     "eslint": "8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
