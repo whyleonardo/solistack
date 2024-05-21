@@ -2,5 +2,6 @@ pnpm-lock.yaml
 drizzle/
 .prettierignore
 .gitignore
+.husky
 
 .changeset/
