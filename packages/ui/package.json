@@ -46,7 +46,13 @@
         "default": "./dist/components/ui/select/index.js"
       }
     },
-    "./cn": {
+    "./typography": {
+      "import": {
+        "types": "./dist/components/ui/typography/index.d.ts",
+        "default": "./dist/components/ui/typography/index.js"
+      }
+    },
+    "./cn.ts": {
       "import": {
         "types": "./dist/utils/cn.d.ts",
         "default": "./dist/utils/cn.js"

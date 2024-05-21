@@ -4,7 +4,7 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "lint": {
       "dependsOn": ["^lint"]
@@ -12,6 +12,22 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "storybook": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    },
+    "build-storybook": {
+      "dependsOn": ["^build"],
+      "outputs": ["storybook-static/**"],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "!.eslintrc.cjs",
+        "!CHANGELOG.md",
+        "!tsup.config.ts",
+        "!tsconfig.build.json"
+      ]
     }
   }
 }

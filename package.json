@@ -53,7 +53,8 @@
     "rimraf": "^5.0.7",
     "turbo": "latest"
   },
+  "packageManager": "pnpm@9.1.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   }
 }

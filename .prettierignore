@@ -3,5 +3,7 @@ drizzle/
 .prettierignore
 .gitignore
 .husky
+.npmrc
+.nvmrc
 
 .changeset/
