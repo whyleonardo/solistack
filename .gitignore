@@ -4,7 +4,6 @@
 node_modules
 .pnp
 .pnp.js
-apps
 
 # Local env files
 .env
@@ -38,4 +37,6 @@ yarn-error.log*
 .DS_Store
 *.pem
 
+# Storybook
 *storybook.log
+storybook-static
