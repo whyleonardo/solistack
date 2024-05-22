@@ -22,10 +22,28 @@
         "default": "./dist/components/ui/button/index.js"
       }
     },
+    "./card": {
+      "import": {
+        "types": "./dist/components/ui/card/index.d.ts",
+        "default": "./dist/components/ui/card/index.js"
+      }
+    },
     "./dialog": {
       "import": {
         "types": "./dist/components/ui/dialog/index.d.ts",
         "default": "./dist/components/ui/dialog/index.js"
+      }
+    },
+    "./drawer": {
+      "import": {
+        "types": "./dist/components/ui/drawer/index.d.ts",
+        "default": "./dist/components/ui/drawer/index.js"
+      }
+    },
+    "./dropdown-menu": {
+      "import": {
+        "types": "./dist/components/ui/dropdown-menu/index.d.ts",
+        "default": "./dist/components/ui/dropdown-menu/index.js"
       }
     },
     "./input": {
@@ -46,10 +64,46 @@
         "default": "./dist/components/ui/select/index.js"
       }
     },
+    "./separator": {
+      "import": {
+        "types": "./dist/components/ui/separator/index.d.ts",
+        "default": "./dist/components/ui/separator/index.js"
+      }
+    },
+    "./sheet": {
+      "import": {
+        "types": "./dist/components/ui/sheet/index.d.ts",
+        "default": "./dist/components/ui/sheet/index.js"
+      }
+    },
+    "./toast": {
+      "import": {
+        "types": "./dist/components/ui/toast/index.d.ts",
+        "default": "./dist/components/ui/toast/index.js"
+      }
+    },
+    "./toaster": {
+      "import": {
+        "types": "./dist/components/ui/toaster/index.d.ts",
+        "default": "./dist/components/ui/toaster/index.js"
+      }
+    },
+    "./tooltip": {
+      "import": {
+        "types": "./dist/components/ui/tooltip/index.d.ts",
+        "default": "./dist/components/ui/tooltip/index.js"
+      }
+    },
     "./typography": {
       "import": {
         "types": "./dist/components/ui/typography/index.d.ts",
         "default": "./dist/components/ui/typography/index.js"
+      }
+    },
+    "./use-toast": {
+      "import": {
+        "types": "./dist/components/ui/use-toast/index.d.ts",
+        "default": "./dist/components/ui/use-toast/index.js"
       }
     },
     "./cn.ts": {
@@ -123,7 +177,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^1.4.0",
+    "@microsoft/api-extractor": "^7.43.7",
     "@soli/assets": "workspace:*",
     "@soli/eslint-config": "workspace:*",
     "@soli/tailwind": "workspace:*",

@@ -36,7 +36,8 @@ export default defineConfig(async (options) => ({
   minify: !options.watch,
   clean: !options.watch,
   publicDir: true,
-  dts: true,
+  experimentalDts: true,
+  tsconfig: "./tsconfig.build.json",
   outDir: "dist",
   async onSuccess() {
     const pkg = await readPackageJSON()

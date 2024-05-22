@@ -3,6 +3,7 @@ drizzle/
 .prettierignore
 .gitignore
 .husky
+.tsbuildinfo
 .npmrc
 .nvmrc
 
