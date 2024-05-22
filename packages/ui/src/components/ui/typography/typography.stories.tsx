@@ -28,6 +28,7 @@ const meta: Meta<typeof Typography> = {
 }
 
 export default meta
+
 type Story = StoryObj<typeof Typography>
 
 export const H1: Story = {

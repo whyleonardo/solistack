@@ -17,6 +17,8 @@ const meta: Meta<typeof AvatarImage> = {
   )
 }
 
+export default meta
+
 type Story = StoryObj<typeof AvatarImage>
 
 export const Default: Story = {}
@@ -25,5 +27,3 @@ export const Fallback: Story = {
     src: ""
   }
 }
-
-export default meta
