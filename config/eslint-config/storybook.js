@@ -10,7 +10,10 @@ const config = {
       files: ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
       rules: {}
     }
-  ]
+  ],
+  rules: {
+    "storybook/no-title-property-in-meta": "off"
+  }
 }
 
 module.exports = config
