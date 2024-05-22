@@ -65,8 +65,7 @@ export const soliTailwindPreset: Config = {
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
-        mono: ["var(--font-geist-mono)"],
-        cal: ["var(--font-cal-sans)"]
+        mono: ["var(--font-geist-mono)"]
       },
       keyframes: {
         "accordion-down": {
