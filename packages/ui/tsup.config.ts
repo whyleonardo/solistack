@@ -23,7 +23,7 @@ async function getEntries() {
     ...primitives,
     {
       source: "./src/utils/cn.ts",
-      export: "./cn.ts"
+      export: "./cn"
     }
   ]
 }

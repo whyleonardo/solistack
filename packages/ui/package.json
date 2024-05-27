@@ -106,7 +106,7 @@
         "default": "./dist/components/ui/use-toast/index.js"
       }
     },
-    "./cn.ts": {
+    "./cn": {
       "import": {
         "types": "./dist/utils/cn.d.ts",
         "default": "./dist/utils/cn.js"
