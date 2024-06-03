@@ -4,7 +4,14 @@ drizzle/
 .gitignore
 .husky
 .tsbuildinfo
+
 .npmrc
 .nvmrc
+
+*.svg
+*.ico
+*.png
+*.jpg
+*.jpeg
 
 .changeset/

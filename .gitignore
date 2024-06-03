@@ -21,6 +21,9 @@ coverage
 # Vercel
 .vercel
 
+#ESlint
+.eslintcache
+
 # Build Outputs
 .next/
 out/
