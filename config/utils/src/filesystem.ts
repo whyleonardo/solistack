@@ -1,5 +1,5 @@
-import { type Dirent } from "fs"
-import { readdir, writeFile } from "fs/promises"
+import type { Dirent } from "node:fs"
+import { readdir, writeFile } from "node:fs/promises"
 import { findFarthestFile } from "pkg-types"
 import prettier from "prettier"
 

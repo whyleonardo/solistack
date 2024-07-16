@@ -1,20 +1,20 @@
 import { listFiles } from "@soli/utils/filesystem"
 
-import fs from "fs"
 import { mkdir } from "fs/promises"
-import path from "path"
+import fs from "node:fs"
+import path from "node:path"
 
 const transformNewComponents = async () => {
   const componentsFolderExists = fs.existsSync("./src/components")
 
   if (!componentsFolderExists) {
-    return console.log("There are no new components to move!")
+    return console.info("There are no new components to move!")
   }
 
   const files = await listFiles("./src/components/ui")
 
   if (!files.length) {
-    return console.log("There are no new components to move!")
+    return console.info("There are no new components to move!")
   }
 
   files.forEach(async (c) => {
@@ -36,7 +36,7 @@ const transformNewComponents = async () => {
 
     fs.rename(oldPath, newPath, (err) => {
       if (err) {
-        console.log(err)
+        console.error(err)
       }
     })
   })
