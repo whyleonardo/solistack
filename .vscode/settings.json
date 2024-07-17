@@ -1,7 +1,6 @@
 {
   "files.exclude": {
     "**/tsconfig.tsbuildinfo": false,
-    "**/.git": false,
     "**/.svn": false,
     "**/.hg": false,
     "**/CVS": false,
@@ -13,7 +12,6 @@
     "**/drizzle": false,
     "**/dist": false,
     "**/.todo.md": false,
-    "**/.eslintrc.cjs": false,
     "**/.editorconfig": false,
     "**/.gitignore": false,
     "**/.lintstagedrc.mjs": false,

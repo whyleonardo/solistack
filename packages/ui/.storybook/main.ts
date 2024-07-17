@@ -1,6 +1,6 @@
 import { getAbsolutePath } from "@/utils/get-absolute-paths"
 
-import { type StorybookConfig } from "@storybook/react-vite"
+import type { StorybookConfig } from "@storybook/react-vite"
 
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],

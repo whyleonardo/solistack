@@ -2,7 +2,7 @@ import "@soli/assets/fonts/stylesheet.css"
 import { withThemeByClassName } from "@storybook/addon-themes"
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport"
 import type { Preview } from "@storybook/react"
-import { type ReactRenderer } from "@storybook/react"
+import type { ReactRenderer } from "@storybook/react"
 
 import "../public/globals.css"
 import theme from "./theme"

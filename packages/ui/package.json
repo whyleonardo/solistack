@@ -121,7 +121,6 @@
     "build": "pnpm rearrange-comps && tsup",
     "build-storybook": "storybook build",
     "dev": "pnpm rearrange-comps && tsup --watch",
-    "lint": "eslint . --cache --max-warnings 0",
     "rearrange-comps": "tsx rearrange-components.ts",
     "storybook": "storybook dev -p 6006",
     "typecheck": "tsc --noEmit --tsBuildInfoFile .tsbuildinfo",
@@ -179,7 +178,6 @@
   "devDependencies": {
     "@microsoft/api-extractor": "^7.43.7",
     "@soli/assets": "workspace:*",
-    "@soli/eslint-config": "workspace:*",
     "@soli/tailwind": "workspace:*",
     "@soli/tsconfig": "workspace:*",
     "@soli/utils": "workspace:*",

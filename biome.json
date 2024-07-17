@@ -1,0 +1,66 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "formatter": {
+    "enabled": false
+  },
+  "linter": {
+    "rules": {
+      "recommended": false,
+      "complexity": {
+        "noBannedTypes": "error",
+        "useLiteralKeys": "error",
+        "noUselessTypeConstraint": "error",
+        "noUselessEmptyExport": "error",
+        "useOptionalChain": "error",
+        "useFlatMap": "error",
+        "noUselessCatch": "error",
+        "noForEach": "off"
+      },
+      "correctness": {
+        "noUnusedVariables": "error",
+        "noUnusedImports": "error",
+        "noPrecisionLoss": "error",
+        "noInvalidUseBeforeDeclaration": "error",
+        "noSelfAssign": "error",
+        "noFlatMapIdentity": "error"
+      },
+      "nursery": {
+        "useThrowOnlyError": "error",
+        "noEvolvingTypes": "error"
+      },
+      "style": {
+        "noNonNullAssertion": "error",
+        "useConsistentArrayType": "error",
+        "useExportType": "error",
+        "useImportType": "error",
+        "useDefaultParameterLast": "error",
+        "noInferrableTypes": "error",
+        "useAsConstAssertion": "error",
+        "useEnumInitializers": "error",
+        "useShorthandFunctionType": "error",
+        "useLiteralEnumMembers": "error",
+        "useShorthandArrayType": "error",
+        "noUnusedTemplateLiteral": "error",
+        "noVar": "error",
+        "useConst": "error",
+        "useTemplate": "error"
+      },
+      "suspicious": {
+        "noEmptyBlockStatements": "error",
+        "noEmptyInterface": "error",
+        "noExplicitAny": "error",
+        "noConfusingVoidType": "error",
+        "noRedeclare": "error",
+        "useAwait": "error",
+        "noImplicitAnyLet": "error",
+        "noCatchAssign": "error",
+        "noConsoleLog": "error"
+      },
+      "performance": {
+        "noReExportAll": "error",
+        "noBarrelFile": "error",
+        "noDelete": "error"
+      }
+    }
+  }
+}
