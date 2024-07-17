@@ -39,3 +39,7 @@ yarn-error.log*
 # Storybook
 *storybook.log
 storybook-static
+
+# .tsbuildinfo
+**/tsconfig.tsbuildinfo
+**/.tsbuildinfo
