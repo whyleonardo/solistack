@@ -1,5 +1,5 @@
 {
   "extends": ["@soli/tsconfig/base.json"],
-  "include": [".eslintrc.cjs", "*.js", "*.ts", "*.cjs", "*.mjs"],
+  "include": ["*.js", "*.ts", "*.cjs", "*.mjs"],
   "exclude": ["apps", "packages", "config", "node_modules"]
 }

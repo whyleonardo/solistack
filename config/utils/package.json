@@ -18,7 +18,6 @@
     "pkg-types": "^1.1.1"
   },
   "devDependencies": {
-    "@soli/eslint-config": "workspace:*",
     "@soli/tsconfig": "workspace:*",
     "@types/node": "^20.12.12",
     "tsup": "^8.0.2"

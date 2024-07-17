@@ -1,4 +1,4 @@
 {
   "extends": ["@soli/tsconfig/base.json"],
-  "include": ["**/*.ts", ".eslintrc.cjs"]
+  "include": ["**/*.ts"]
 }

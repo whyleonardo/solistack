@@ -3,7 +3,7 @@ import containerQueries from "@tailwindcss/container-queries"
 import typography from "@tailwindcss/typography"
 
 import fluid, { extract, fontSize, screens } from "fluid-tailwind"
-import { type Config } from "tailwindcss"
+import type { Config } from "tailwindcss"
 import animate from "tailwindcss-animate"
 
 export const soliTailwindPreset: Config = {
