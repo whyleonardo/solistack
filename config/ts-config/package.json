@@ -1,5 +1,13 @@
 {
   "name": "@soli/tsconfig",
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "type": "module",
+  "files": [
+    "./base.json",
+    "./next.json",
+    "./react.json",
+    "./build.json",
+    "./dom.json"
+  ]
 }
