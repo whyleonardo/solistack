@@ -9,6 +9,9 @@
   ],
   "scripts": {
     "build": "turbo build",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push --skip-generate",
+    "db:studio": "prisma studio",
     "dev": "turbo dev",
     "format": "bun format:write",
     "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
@@ -58,5 +61,9 @@
   "packageManager": "bun@1.1.21",
   "engines": {
     "node": ">=18"
+  },
+  "prisma": {
+    "schema": "packages/db/prisma/schema.prisma",
+    "seed": "tsx packages/database/src/seed.ts"
   }
 }
