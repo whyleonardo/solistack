@@ -1,9 +1,0 @@
-{
-  "extends": ["@soli/tsconfig/base.json"],
-  "compilerOptions": {
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "tsBuildInfoFile": ".tsbuildinfo"
-  },
-  "include": ["**/*.ts", "**/*.mjs", "**/*.js", "**/*.cjs"],
-  "exclude": ["node_modules", "dist"]
-}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "linter": {
+    "rules": {
+      "a11y": {
+        "useButtonType": "info",
+        "noBlankTarget": "error",
+        "useAltText": "error",
+        "useAnchorContent": "error",
+        "useValidAnchor": "error",
+        "useAriaActivedescendantWithTabindex": "error",
+        "useValidAriaProps": "error",
+        "noAriaUnsupportedElements": "error",
+        "useKeyWithClickEvents": "error",
+        "useHeadingContent": "error",
+        "useHtmlLang": "error",
+        "useIframeTitle": "error",
+        "noRedundantAlt": "error",
+        "useValidLang": "error",
+        "useMediaCaption": "error",
+        "useKeyWithMouseEvents": "error",
+        "noAccessKey": "error",
+        "noAriaHiddenOnFocusable": "error",
+        "noAutofocus": "error",
+        "noDistractingElements": "error",
+        "noInteractiveElementToNoninteractiveRole": "error",
+        "noNoninteractiveElementToInteractiveRole": "error",
+        "noNoninteractiveTabindex": "error",
+        "noRedundantRoles": "error",
+        "useAriaPropsForRole": "error",
+        "noHeaderScope": "error",
+        "noPositiveTabindex": "error"
+      },
+      "complexity": {
+        "noUselessFragments": "error"
+      },
+      "correctness": {
+        "useJsxKeyInIterable": "error",
+        "noChildrenProp": "error",
+        "noVoidElementsWithChildren": "error",
+        "useHookAtTopLevel": "error",
+        "useExhaustiveDependencies": "off"
+      },
+      "nursery": {
+        "useFocusableInteractive": "error",
+        "noLabelWithoutControl": "error",
+        "useSemanticElements": "error",
+        "noConsole": "error"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "error",
+        "noDangerouslySetInnerHtmlWithChildren": "error"
+      },
+      "style": {
+        "noImplicitBoolean": "error",
+        "useFragmentSyntax": "error",
+        "useSelfClosingElements": "error"
+      },
+      "suspicious": {
+        "noCommentText": "error",
+        "noDuplicateJsxProps": "error",
+        "noArrayIndexKey": "error"
+      }
+    }
+  }
+}

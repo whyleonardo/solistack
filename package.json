@@ -1,58 +1,35 @@
 {
   "name": "soli",
   "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "config/*",
+    "packages/*"
+  ],
   "scripts": {
-    "build": "turbo run build",
-    "clean": "rimraf --glob **/node_modules **/dist **/.turbo **/.next **/.astro **/storybook-static pnpm-lock.yaml **/.tsbuildinfo **/playwright-report **/test-results **/.tsup",
-    "commit": "git-cz",
-    "dev": "turbo run dev",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "format": "bun format:write",
     "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
     "format:write": "prettier \"**/*\" --ignore-unknown --list-different --write",
     "lint": "biome lint --diagnostic-level=error --no-errors-on-unmatched .",
     "lint:fix": "biome check --write --unsafe .",
-    "prepare": "husky",
-    "sb": "pnpm --filter ui storybook",
-    "sb:build": "pnpm --filter ui build-storybook",
-    "sb:start": "pnpm --filter ui storybook start",
-    "ui:add": "pnpm --filter ui ui:add"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional",
-      "@commitlint/config-pnpm-scopes"
-    ]
-  },
-  "lint-staged": {
-    "*": [
-      "prettier --write"
-    ],
-    "**/*.{ts,tsx,js}": [
-      "biome check --error-on-warnings --no-errors-on-unmatched --staged ."
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "@commitlint/cz-commitlint"
-    }
+    "lint:spell": "spell"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@commitlint/config-pnpm-scopes": "^19.1.0",
-    "@commitlint/cz-commitlint": "^19.2.0",
+    "@soli/biome": "workspace:*",
     "@soli/tsconfig": "workspace:*",
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
-    "commitizen": "^4.3.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.7",
-    "prettier": "^3.3.3",
-    "prettier-plugin-packagejson": "^2.5.1",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "rimraf": "^6.0.1",
-    "turbo": "latest"
+    "@trivago/prettier-plugin-sort-imports": "4.3.0",
+    "prettier": "3.3.3",
+    "prettier-plugin-packagejson": "2.5.1",
+    "prettier-plugin-tailwindcss": "0.6.5",
+    "turbo": "2.0.12",
+    "typescript": "5.5.4"
   },
-  "packageManager": "pnpm@9.5.0",
-  "package-manager-strict": false
+  "packageManager": "bun@1.0.26",
+  "engines": {
+    "node": ">=18"
+  }
 }
