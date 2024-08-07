@@ -15,7 +15,7 @@
     "format:write": "prettier \"**/*\" --ignore-unknown --list-different --write",
     "lint": "biome lint --diagnostic-level=error --no-errors-on-unmatched .",
     "lint:fix": "biome check --write --unsafe .",
-    "lint:spell": "spell",
+    "lint:spell": "cspell \"**\" --gitignore --dot --no-progress --cache --unique ",
     "prepare": "husky"
   },
   "commitlint": {
@@ -25,6 +25,7 @@
   },
   "lint-staged": {
     "*": [
+      "cspell --no-must-find-files",
       "prettier --list-different"
     ],
     "**/*.{ts,tsx,js,jsx,cjs,mjs}": [
@@ -45,6 +46,7 @@
     "@soli/tsconfig": "workspace:*",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "commitizen": "4.3.0",
+    "cspell": "8.13.1",
     "husky": "9.1.4",
     "lint-staged": "15.2.8",
     "prettier": "3.3.3",

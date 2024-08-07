@@ -27,6 +27,8 @@ out/
 build
 dist
 
+# Cspell cache
+.cspellcache
 
 # Debug
 npm-debug.log*
