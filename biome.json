@@ -3,5 +3,17 @@
   "extends": ["@soli/biome/base"],
   "linter": {
     "enabled": true
-  }
+  },
+  "overrides": [
+    {
+      "include": ["packages/env/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useNamingConvention": "off"
+          }
+        }
+      }
+    }
+  ]
 }
