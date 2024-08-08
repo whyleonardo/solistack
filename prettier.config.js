@@ -24,6 +24,7 @@ const config = {
   ],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
+  tailwindFunctions: ["tv"],
 }
 
 export default config

@@ -9,6 +9,7 @@ ignorePaths:
   - "**/*.svg"
   - "**/schema.prisma"
   - "**/migrations"
+  - .vscode
 words:
   - acst
   - aest

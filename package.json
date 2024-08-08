@@ -10,6 +10,7 @@
   "scripts": {
     "auth:gen-secret": "openssl rand -base64 33",
     "build": "turbo build",
+    "copy-env": "cp .env.example .env",
     "db:generate": "prisma generate",
     "db:push": "prisma db push --skip-generate",
     "db:studio": "prisma studio",
