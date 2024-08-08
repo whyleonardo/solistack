@@ -20,7 +20,9 @@
     "lint": "biome lint --diagnostic-level=error --no-errors-on-unmatched .",
     "lint:fix": "biome check --write --unsafe .",
     "lint:spell": "cspell \"**\" --gitignore --dot --no-progress --cache --unique ",
-    "prepare": "husky"
+    "prepare": "husky",
+    "release": "turbo run build lint typecheck && changeset version && changeset publish",
+    "reset:changelog": "bun run rm -rf */**/CHANGELOG.md"
   },
   "commitlint": {
     "extends": [
@@ -40,6 +42,9 @@
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
+  },
+  "dependencies": {
+    "@changesets/cli": "2.27.7"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
