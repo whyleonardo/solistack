@@ -1,8 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "ui": "tui",
-  "globalDependencies": [".env"],
-  "globalEnv": ["NODE_ENV", "VERCEL_ENV", "NEXT_PUBLIC_VERCEL_URL"],
+  "globalPassThroughEnv": ["VERCEL_URL", "NODE_ENV", "SKIP_ENV_VALIDATION"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
@@ -16,13 +14,11 @@
       "cache": false,
       "persistent": true
     },
-    "db:generate": {
-      "cache": false
-    },
-    "db:push": {
-      "cache": false
-    },
-    "db:studio": {
+    "db:migrate": {},
+    "db:generate": {},
+    "db:push": {},
+    "db:studio": {},
+    "clean": {
       "cache": false
     }
   }
