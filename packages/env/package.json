@@ -4,7 +4,7 @@
   "private": true,
   "exports": {
     "./web": {
-      "default": "./src/web/index.ts",
+      "import": "./src/web/index.ts",
       "types": "./src/web/index.ts"
     }
   },

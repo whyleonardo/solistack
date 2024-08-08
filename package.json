@@ -8,6 +8,7 @@
     "packages/*"
   ],
   "scripts": {
+    "auth:gen-secret": "openssl rand -base64 33",
     "build": "turbo build",
     "db:generate": "prisma generate",
     "db:push": "prisma db push --skip-generate",
@@ -63,7 +64,6 @@
     "node": ">=18"
   },
   "prisma": {
-    "schema": "packages/db/prisma/schema.prisma",
-    "seed": "tsx packages/database/src/seed.ts"
+    "schema": "packages/db/prisma/schema.prisma"
   }
 }

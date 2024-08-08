@@ -9,8 +9,10 @@ export const env = createEnv({
   server: {
     DATABASE_URL: z.string().url().startsWith("postgres"),
     AUTH_SECRET: z.string().min(1),
+    AUTH_GITHUB_ID: z.string().min(1),
+    AUTH_GITHUB_SECRET: z.string().min(1),
   },
   experimental__runtimeEnv: {},
   emptyStringAsUndefined: true,
-  skipValidation: !!process.env.SKIP_ENV_VALIDATION,
+  skipValidation: false,
 })

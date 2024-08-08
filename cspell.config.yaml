@@ -7,6 +7,8 @@ ignorePaths:
   - .changeset
   - drizzle
   - "**/*.svg"
+  - "**/schema.prisma"
+  - "**/migrations"
 words:
   - acst
   - aest
