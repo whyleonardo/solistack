@@ -1,18 +1,14 @@
+import { extract, soliTailwindPreset } from "@soli/tailwind"
+
 import type { Config } from "tailwindcss"
 
 const config = {
-  darkMode: ["class"],
-  content: ["./src/**/*.{ts,tsx}"],
-  theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
-    extend: {},
+  content: {
+    files: ["./src/**/*.{js,ts,jsx,tsx,mdx}", "../../packages/ui/dist/**/*.js"],
+    extract,
   },
+  darkMode: ["class"],
+  presets: [soliTailwindPreset],
 } satisfies Config
 
 export default config

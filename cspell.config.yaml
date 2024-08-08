@@ -7,9 +7,11 @@ ignorePaths:
   - .changeset
   - drizzle
   - "**/*.svg"
-  - "**/schema.prisma"
-  - "**/migrations"
   - .vscode
+  - "**/migrations"
+  - "**/schema.prisma"
+  - "**/analyze"
+  - "**/.next"
 words:
   - acst
   - aest
