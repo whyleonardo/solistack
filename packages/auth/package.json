@@ -9,5 +9,8 @@
     "@soli/db": "workspace:*",
     "@soli/env": "workspace:*",
     "next-auth": "5.0.0-beta.20"
+  },
+  "devDependencies": {
+    "@soli/tsconfig": "workspace:*"
   }
 }
