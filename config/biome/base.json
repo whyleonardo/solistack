@@ -33,7 +33,6 @@
         "useExportType": "error",
         "useImportType": "error",
         "useDefaultParameterLast": "error",
-        "useNamingConvention": "error",
         "noInferrableTypes": "error",
         "useAsConstAssertion": "error",
         "useEnumInitializers": "error",
