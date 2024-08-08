@@ -51,13 +51,11 @@
         "noExplicitAny": "error",
         "noConfusingVoidType": "error",
         "noRedeclare": "error",
-        "useAwait": "error",
         "noImplicitAnyLet": "error",
         "noCatchAssign": "error"
       },
       "performance": {
         "noReExportAll": "error",
-        "noBarrelFile": "error",
         "noDelete": "error"
       }
     }
