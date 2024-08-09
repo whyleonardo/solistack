@@ -10,7 +10,7 @@ export const env = createEnv({
     NODE_ENV: z.enum(["development", "test", "production"]).optional(),
   },
   server: {
-    DATABASE_URL: z.string().url().startsWith("postgres"),
+    DATABASE_URL: z.string().url().startsWith("post"),
     AUTH_SECRET: z.string().optional(),
     AUTH_GITHUB_ID: z.string().optional(),
     AUTH_GITHUB_SECRET: z.string().optional(),
