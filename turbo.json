@@ -25,6 +25,7 @@
     "db:generate": {},
     "db:push": {},
     "db:studio": {},
+    "lint:spell": {},
     "clean": {
       "cache": false
     }
