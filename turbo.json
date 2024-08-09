@@ -5,6 +5,12 @@
   "tasks": {
     "build": {
       "outputLogs": "full",
+      "env": [
+        "AUTH_SECRET",
+        "AUTH_GITHUB_ID",
+        "AUTH_GITHUB_SECRET",
+        "DATABASE_URL"
+      ],
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*", "./.env*"],
       "outputs": [".next/**", "!.next/cache/**"]
