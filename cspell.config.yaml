@@ -12,6 +12,7 @@ ignorePaths:
   - "**/schema.prisma"
   - "**/analyze"
   - "**/.next"
+  - "**/tsconfig.build.tsbuildinfo"
 words:
   - acst
   - aest

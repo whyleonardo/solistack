@@ -2,8 +2,17 @@
   "name": "@soli/auth",
   "version": "0.1.0",
   "private": true,
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "bun run rm -rf dist *.tsbuildinfo",
+    "dev": "tsc -w -p tsconfig.build.json"
+  },
   "dependencies": {
     "@auth/prisma-adapter": "2.4.2",
     "@soli/db": "workspace:*",
