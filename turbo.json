@@ -1,12 +1,13 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env"],
+  "globalDependencies": ["./.env*", "./.env"],
   "globalPassThroughEnv": ["VERCEL_URL", "NODE_ENV", "SKIP_ENV_VALIDATION"],
   "tasks": {
     "build": {
+      "outputLogs": "full",
       "env": ["DATABASE_URL"],
       "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*", "./.env*"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {
