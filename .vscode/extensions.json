@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "streetsidesoftware.code-spell-checker",
+    "astro-build.astro-vscode",
     "mikestead.dotenv",
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
