@@ -8,7 +8,7 @@ on:
 env:
   # TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
   # TURBO_TEAM: ${{ vars.TURBO_TEAM }}
-  # VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
 
 jobs:
   spell-lint:
