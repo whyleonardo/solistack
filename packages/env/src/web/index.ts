@@ -10,10 +10,10 @@ export const env = createEnv({
     NODE_ENV: z.enum(["development", "test", "production"]).optional(),
   },
   server: {
-    DATABASE_URL: z.string().url().startsWith("postgres"),
-    AUTH_SECRET: z.string().min(1),
-    AUTH_GITHUB_ID: z.string().min(1),
-    AUTH_GITHUB_SECRET: z.string().min(1),
+    DATABASE_URL: z.string().url().startsWith("postgres").optional(),
+    AUTH_SECRET: z.string().min(1).optional(),
+    AUTH_GITHUB_ID: z.string().min(1).optional(),
+    AUTH_GITHUB_SECRET: z.string().min(1).optional(),
   },
   experimental__runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
