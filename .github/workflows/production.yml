@@ -59,14 +59,11 @@ jobs:
       - name: Install Vercel CLI
         run: bun install --global vercel@latest
 
-      - name: Link Project with Vercel
-        run: VERCEL_ORG_ID=${{ secrets.VERCEL_ORG_ID }} VERCEL_PROJECT_ID=${{ secrets.VERCEL_PROJECT_ID_WEB }}vercel
-
       - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }} VERCEL_ORG_ID=${{ secrets.VERCEL_ORG_ID }} VERCEL_PROJECT_ID=${{ secrets.VERCEL_PROJECT_ID_WEB }}
 
       - name: Build Project Artifacts
-        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }} VERCEL_ORG_ID=${{ secrets.VERCEL_ORG_ID }} VERCEL_PROJECT_ID=${{ secrets.VERCEL_PROJECT_ID_WEB }}
 
       - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }} VERCEL_ORG_ID=team_123 VERCEL_PROJECT_ID=prj_456 vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }} VERCEL_ORG_ID=${{ secrets.VERCEL_ORG_ID }} VERCEL_PROJECT_ID=${{ secrets.VERCEL_PROJECT_ID_WEB }}
