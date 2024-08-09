@@ -1,8 +1,8 @@
 import bundleAnalyzerPlugin from "@next/bundle-analyzer"
 
-// import * as dotenv from "dotenv"
+import * as dotenv from "dotenv"
 
-// dotenv.config({ path: "../../.env" })
+dotenv.config({ path: "../../.env" })
 
 const withBundleAnalyzer = bundleAnalyzerPlugin({
   enabled: process.env.ANALYZE === "true",

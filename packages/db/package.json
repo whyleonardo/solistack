@@ -9,7 +9,7 @@
     "db:migrate": "bun env:load prisma migrate dev",
     "db:push": "bun env:load prisma db push --skip-generate",
     "db:studio": "bun env:load prisma studio",
-    "env:load": "dotenv -e ../../apps/web/.env -- "
+    "env:load": "dotenv -e ../../.env -- "
   },
   "dependencies": {
     "@prisma/client": "5.18.0",
