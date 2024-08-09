@@ -1,5 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalDotEnv": [".env"],
+  "globalDependencies": [".env"],
   "globalPassThroughEnv": ["VERCEL_URL", "NODE_ENV", "SKIP_ENV_VALIDATION"],
   "tasks": {
     "build": {
