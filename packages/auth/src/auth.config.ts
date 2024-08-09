@@ -2,10 +2,12 @@ import type { NextAuthConfig } from "next-auth"
 
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import { db } from "@soli/db"
+import { env } from "@soli/env/web"
 
 import { providers } from "./providers"
 
 export const authConfig = {
+  secret: env.AUTH_SECRET,
   adapter: PrismaAdapter(db),
   providers: [...providers],
   pages: {

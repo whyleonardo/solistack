@@ -11,9 +11,9 @@ export const env = createEnv({
   },
   server: {
     DATABASE_URL: z.string().url().startsWith("postgres"),
-    AUTH_SECRET: z.string().min(1),
-    AUTH_GITHUB_ID: z.string().min(1),
-    AUTH_GITHUB_SECRET: z.string().min(1),
+    AUTH_SECRET: z.string().optional(),
+    AUTH_GITHUB_ID: z.string().optional(),
+    AUTH_GITHUB_SECRET: z.string().optional(),
   },
   experimental__runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
