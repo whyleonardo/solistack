@@ -6,12 +6,14 @@
   "types": "./src/index.ts",
   "scripts": {
     "db:generate": "prisma generate",
-    "db:migrate": "prisma migrate dev",
-    "db:push": "prisma db push --skip-generate",
-    "db:studio": "prisma studio"
+    "db:migrate": "bun env:load prisma migrate dev",
+    "db:push": "bun env:load prisma db push --skip-generate",
+    "db:studio": "bun env:load prisma studio",
+    "env:load": "dotenv -e ../../apps/web/.env -- "
   },
   "dependencies": {
-    "@prisma/client": "5.18.0"
+    "@prisma/client": "5.18.0",
+    "dotenv-cli": "7.4.2"
   },
   "devDependencies": {
     "@soli/env": "workspace:*",
