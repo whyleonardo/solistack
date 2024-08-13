@@ -4,6 +4,11 @@
 node_modules
 .pnp
 .pnp.js
+
+# TypeScript cache
+*.tsbuildinfo
+
+# nextjs bundle analyzer
 **/analyze
 
 # Local env files

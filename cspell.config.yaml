@@ -25,6 +25,8 @@ words:
   - Anson
   - datasource
   - bitnami
+  - Preact
+  - rarr
   - astro
   - astrojs
   - autodocs

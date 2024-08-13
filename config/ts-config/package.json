@@ -5,6 +5,9 @@
   "type": "module",
   "files": [
     "./base.json",
-    "./next.json"
+    "./next.json",
+    "./build.json",
+    "./react.json",
+    "./dom.json"
   ]
 }
