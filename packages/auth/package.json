@@ -14,7 +14,7 @@
     "dev": "tsc -w -p tsconfig.build.json"
   },
   "dependencies": {
-    "@auth/prisma-adapter": "2.4.2",
+    "@auth/drizzle-adapter": "1.5.0",
     "@soli/db": "workspace:*",
     "@soli/env": "workspace:*",
     "next-auth": "5.0.0-beta.20"

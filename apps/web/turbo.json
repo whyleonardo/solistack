@@ -10,7 +10,8 @@
         "DATABASE_URL",
         "AUTH_GITHUB_ID",
         "AUTH_GITHUB_SECRET",
-        "AUTH_SECRET"
+        "AUTH_SECRET",
+        "NEXT_RUNTIME"
       ]
     }
   }

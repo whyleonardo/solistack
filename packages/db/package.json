@@ -2,22 +2,37 @@
   "name": "@soli/db",
   "version": "0.1.0",
   "private": true,
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "exports": {
+    "./schema": {
+      "types": "./dist/schema/index.d.ts",
+      "default": "./dist/schema/index.js"
+    },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
-    "db:generate": "prisma generate",
-    "db:migrate": "bun env:load prisma migrate dev",
-    "db:push": "bun env:load prisma db push --skip-generate",
-    "db:studio": "bun env:load prisma studio",
-    "env:load": "dotenv -e ../../.env -- "
+    "build": "tsc -p tsconfig.build.json",
+    "db:check": "drizzle-kit check",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:migrate:drop": "drizzle-kit drop",
+    "db:pull": "drizzle-kit introspect",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:up": "drizzle-kit up",
+    "dev": "tsc -w -p tsconfig.build.json"
   },
   "dependencies": {
-    "@prisma/client": "5.18.0",
-    "dotenv-cli": "7.4.2"
+    "@neondatabase/serverless": "0.9.5",
+    "drizzle-orm": "0.33.0",
+    "drizzle-zod": "0.5.1",
+    "postgres": "3.3.5"
   },
   "devDependencies": {
     "@soli/env": "workspace:*",
     "@soli/tsconfig": "workspace:*",
-    "prisma": "5.18.0"
+    "drizzle-kit": "0.24.2"
   }
 }

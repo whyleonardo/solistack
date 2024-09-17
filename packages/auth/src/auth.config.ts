@@ -1,14 +1,14 @@
 import type { NextAuthConfig } from "next-auth"
 
-import { PrismaAdapter } from "@auth/prisma-adapter"
+import { DrizzleAdapter } from "@auth/drizzle-adapter"
 import { db } from "@soli/db"
-import { env } from "@soli/env/web"
+import { env } from "@soli/env/web/server"
 
 import { providers } from "./providers"
 
 export const authConfig = {
   secret: env.AUTH_SECRET,
-  adapter: PrismaAdapter(db),
+  adapter: DrizzleAdapter(db),
   providers: [...providers],
   pages: {
     signIn: "/auth/login",
