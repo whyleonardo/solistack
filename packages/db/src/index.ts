@@ -1,13 +1,13 @@
-import { PrismaClient } from "@prisma/client"
+import { env } from "@soli/env/web/db"
 
-const prismaClientSingleton = () => {
-  return new PrismaClient()
-}
+import { drizzle } from "drizzle-orm/postgres-js"
+import postgres from "postgres"
 
-declare const globalThis: {
-  prismaGlobal: ReturnType<typeof prismaClientSingleton>
-} & typeof global
+import * as schema from "./schema"
 
-export const db = globalThis.prismaGlobal ?? prismaClientSingleton()
+const client = postgres(env.DATABASE_URL)
 
-if (process.env.NODE_ENV !== "production") globalThis.prismaGlobal = db
+export const db = drizzle(client, {
+  schema,
+  logger: env.NODE_ENV === "development",
+})

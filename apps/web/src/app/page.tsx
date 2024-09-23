@@ -1,5 +1,8 @@
 import { ThemeToggle } from "@/components/theme-toggle"
 
+import { db } from "@soli/db"
+import { users } from "@soli/db/schema"
+
 const Page = () => {
   return (
     <div className="container relative mx-auto flex h-screen items-center justify-center">

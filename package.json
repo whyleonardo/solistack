@@ -63,9 +63,5 @@
   "packageManager": "bun@1.1.21",
   "engines": {
     "node": ">=18"
-  },
-  "prisma": {
-    "schema": "packages/db/prisma/schema.prisma",
-    "env": "./env"
   }
 }
