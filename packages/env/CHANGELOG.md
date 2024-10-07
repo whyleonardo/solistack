@@ -1,4 +1,4 @@
-# @soli/env
+# @solistack/env
 
 ## 0.1.0
 

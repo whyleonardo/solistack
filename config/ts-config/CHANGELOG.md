@@ -1,4 +1,4 @@
-# @soli/tsconfig
+# @solistack/tsconfig
 
 ## 0.2.0
 

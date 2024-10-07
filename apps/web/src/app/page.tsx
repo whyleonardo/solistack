@@ -1,7 +1,7 @@
 import { ThemeToggle } from "@/components/theme-toggle"
 
-import { db } from "@soli/db"
-import { users } from "@soli/db/schema"
+import { db } from "@solistack/db"
+import { users } from "@solistack/db/schema"
 
 const Page = () => {
   return (

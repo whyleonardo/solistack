@@ -1,1 +1,1 @@
-export { auth as middleware } from "@soli/auth"
+export { auth as middleware } from "@solistack/auth"

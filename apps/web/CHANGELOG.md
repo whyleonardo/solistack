@@ -11,5 +11,5 @@
 ### Patch Changes
 
 - Updated dependencies
-  - @soli/auth@0.1.0
-  - @soli/db@0.1.0
+  - @solistack/auth@0.1.0
+  - @solistack/db@0.1.0

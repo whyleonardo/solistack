@@ -1,5 +1,5 @@
 {
-  "name": "@soli/env",
+  "name": "@solistack/env",
   "version": "0.1.0",
   "private": true,
   "exports": {
@@ -8,7 +8,7 @@
     "./web/db": "./src/web/db.ts"
   },
   "devDependencies": {
-    "@soli/tsconfig": "workspace:*",
+    "@solistack/tsconfig": "workspace:*",
     "@t3-oss/env-core": "0.11.0",
     "@t3-oss/env-nextjs": "0.11.0",
     "zod": "3.23.8"

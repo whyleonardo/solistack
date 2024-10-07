@@ -1,4 +1,4 @@
-import { env } from "@soli/env/web/db"
+import { env } from "@solistack/env/web/db"
 
 import type { Config } from "drizzle-kit"
 

@@ -6,7 +6,7 @@ const withBundleAnalyzer = bundleAnalyzerPlugin({
 import.meta.url
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["@soli/auth"],
+  transpilePackages: ["@solistack/auth"],
   logging: {
     fetches: {
       fullUrl: true,

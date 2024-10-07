@@ -1,5 +1,5 @@
 {
-  "name": "@soli/auth",
+  "name": "@solistack/auth",
   "version": "0.1.0",
   "private": true,
   "exports": {
@@ -15,11 +15,11 @@
   },
   "dependencies": {
     "@auth/drizzle-adapter": "1.5.0",
-    "@soli/db": "workspace:*",
-    "@soli/env": "workspace:*",
+    "@solistack/db": "workspace:*",
+    "@solistack/env": "workspace:*",
     "next-auth": "5.0.0-beta.20"
   },
   "devDependencies": {
-    "@soli/tsconfig": "workspace:*"
+    "@solistack/tsconfig": "workspace:*"
   }
 }

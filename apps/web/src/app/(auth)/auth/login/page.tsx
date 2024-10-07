@@ -1,6 +1,6 @@
 import { Suspense } from "react"
 
-import { auth, signIn } from "@soli/auth"
+import { auth, signIn } from "@solistack/auth"
 
 const LoginPage = async () => {
   const session = await auth()

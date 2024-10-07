@@ -1,8 +1,8 @@
 import type { NextAuthConfig } from "next-auth"
 
 import { DrizzleAdapter } from "@auth/drizzle-adapter"
-import { db } from "@soli/db"
-import { env } from "@soli/env/web/server"
+import { db } from "@solistack/db"
+import { env } from "@solistack/env/web/server"
 
 import { providers } from "./providers"
 

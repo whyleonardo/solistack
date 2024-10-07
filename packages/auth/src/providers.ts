@@ -1,7 +1,7 @@
 import type { Provider } from "next-auth/providers"
 import GitHub from "next-auth/providers/github"
 
-import { env } from "@soli/env/web/server"
+import { env } from "@solistack/env/web/server"
 
 export const providers = [
   GitHub({

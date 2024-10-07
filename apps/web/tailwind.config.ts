@@ -1,4 +1,4 @@
-import { extract, soliTailwindPreset } from "@soli/tailwind"
+import { extract, solistackTailwindPreset } from "@solistack/tailwind"
 
 import type { Config } from "tailwindcss"
 
@@ -8,7 +8,7 @@ const config = {
     extract,
   },
   darkMode: ["class"],
-  presets: [soliTailwindPreset],
+  presets: [solistackTailwindPreset],
 } satisfies Config
 
 export default config

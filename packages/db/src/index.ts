@@ -1,4 +1,4 @@
-import { env } from "@soli/env/web/db"
+import { env } from "@solistack/env/web/db"
 
 import { drizzle } from "drizzle-orm/postgres-js"
 import postgres from "postgres"

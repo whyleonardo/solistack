@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes"
 
-import { cn } from "@soli/tailwind/utils"
+import { cn } from "@solistack/tailwind/utils"
 
 import { MoonIcon, SunIcon } from "lucide-react"
 
@@ -11,6 +11,7 @@ export const ThemeToggle = () => {
 
   return (
     <button
+      type="button"
       className="relative flex"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
