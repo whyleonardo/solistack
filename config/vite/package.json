@@ -1,5 +1,6 @@
 {
   "name": "@solistack/vite",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -13,15 +14,15 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "4.3.2",
-    "vite": "5.4.8",
+    "@vitejs/plugin-react": "4.3.1",
+    "vite": "5.4.2",
     "vite-tsconfig-paths": "5.0.1"
   },
   "devDependencies": {
-    "@solistack/tsconfig": "workspace:*",
+    "@solistack/tsconfig": "workspace:^",
     "globby": "14.0.2",
     "rollup-plugin-preserve-directives": "0.4.0",
-    "vite-plugin-dts": "4.2.3",
+    "vite-plugin-dts": "4.1.0",
     "vite-plugin-external": "4.3.1"
   }
 }

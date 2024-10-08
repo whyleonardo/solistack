@@ -28,6 +28,7 @@ export function buildConfig({
 }) {
   return defineConfig({
     plugins: [
+      // @ts-expect-error - Version Error
       createExternal({
         nodeBuiltins: true,
         ...external,
