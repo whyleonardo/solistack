@@ -7,7 +7,7 @@
     "SKIP_ENV_VALIDATION",
     "PORT"
   ],
-  "ui": "tui",
+  "ui": "stream",
   "tasks": {
     "build": {
       "dependsOn": ["^build"],

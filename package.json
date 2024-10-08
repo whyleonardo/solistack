@@ -17,9 +17,7 @@
     "lint": "biome lint --diagnostic-level=error --no-errors-on-unmatched .",
     "lint:fix": "biome check --write --unsafe .",
     "lint:spell": "cspell \"**\" --gitignore --dot --no-progress --cache --unique ",
-    "prepare": "husky",
-    "release": "turbo run build lint typecheck",
-    "reset:changelog": "bun run rm -rf */**/CHANGELOG.md"
+    "prepare": "husky"
   },
   "commitlint": {
     "extends": [
