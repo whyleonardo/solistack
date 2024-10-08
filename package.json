@@ -18,7 +18,7 @@
     "lint:fix": "biome check --write --unsafe .",
     "lint:spell": "cspell \"**\" --gitignore --dot --no-progress --cache --unique ",
     "prepare": "husky",
-    "release": "turbo run build lint typecheck && changeset version && changeset publish",
+    "release": "turbo run build lint typecheck",
     "reset:changelog": "bun run rm -rf */**/CHANGELOG.md"
   },
   "commitlint": {
@@ -41,7 +41,6 @@
     }
   },
   "dependencies": {
-    "@changesets/cli": "2.27.7",
     "turbo": "2.0.12"
   },
   "devDependencies": {

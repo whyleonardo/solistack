@@ -10,7 +10,14 @@
     "enabled": true,
     "ignore": ["node_modules"],
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      },
+      "suspicious": {
+        "noConsoleLog": "error"
+      }
     }
   }
 }

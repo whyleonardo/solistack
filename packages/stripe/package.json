@@ -1,0 +1,14 @@
+{
+  "name": "@solistack/stripe",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "stripe": "17.1.0"
+  },
+  "devDependencies": {
+    "@solistack/env": "workspace:*",
+    "@solistack/tsconfig": "workspace:*"
+  }
+}
