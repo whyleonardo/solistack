@@ -1,3 +1,0 @@
-{
-  "extends": ["@solistack/tsconfig/base.json"]
-}
