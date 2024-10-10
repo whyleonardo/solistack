@@ -6,102 +6,67 @@ import typography from "@tailwindcss/typography"
 import fluid, { fontSize, screens } from "fluid-tailwind"
 import type { Config } from "tailwindcss"
 import animate from "tailwindcss-animate"
-import { createPlugin } from "windy-radix-palette"
-import windyTypography from "windy-radix-typography"
 
 export { extract } from "fluid-tailwind"
 
-const colors = createPlugin()
-
 export const solistackTailwindPreset: Config = {
   content: { files: ["./src/**/*.{js,jsx,ts,tsx,mdx}"] },
-  presets: [windyTypography],
+  darkMode: "class",
   theme: {
     screens,
     fontSize,
     extend: {
       colors: {
-        background: colors.alias("gray.1"),
-        foreground: colors.alias("gray.12"),
-
-        muted: {
-          DEFAULT: colors.alias("gray.4"),
-          foreground: colors.alias("gray.11"),
-        },
-
-        card: {
-          DEFAULT: colors.alias("gray.1"),
-          foreground: colors.alias("gray.12"),
-        },
-
-        popover: {
-          DEFAULT: colors.alias("gray.1"),
-          foreground: colors.alias("gray.12"),
-        },
-
-        input: colors.alias("gray.4"),
-
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: colors.alias("iris.10"),
-          foreground: colors.alias({ dark: "iris.12", light: "iris.1" }),
-          1: colors.alias("iris.1"),
-          2: colors.alias("iris.2"),
-          3: colors.alias("iris.3"),
-          4: colors.alias("iris.4"),
-          5: colors.alias("iris.5"),
-          6: colors.alias("iris.6"),
-          7: colors.alias("iris.7"),
-          8: colors.alias("iris.8"),
-          9: colors.alias("iris.9"),
-          10: colors.alias("iris.10"),
-          11: colors.alias("iris.11"),
-          12: colors.alias("iris.12"),
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
-
         secondary: {
-          DEFAULT: colors.alias("lime.10"),
-          foreground: colors.alias({ dark: "lime.1", light: "lime.12" }),
-          1: colors.alias("lime.1"),
-          2: colors.alias("lime.2"),
-          3: colors.alias("lime.3"),
-          4: colors.alias("lime.4"),
-          5: colors.alias("lime.5"),
-          6: colors.alias("lime.6"),
-          7: colors.alias("lime.7"),
-          8: colors.alias("lime.8"),
-          9: colors.alias("lime.9"),
-          10: colors.alias("lime.10"),
-          11: colors.alias("lime.11"),
-          12: colors.alias("lime.12"),
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
-
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
         accent: {
-          DEFAULT: colors.alias("gray.4"),
-          foreground: colors.alias("gray.12"),
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
-
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
         destructive: {
-          DEFAULT: colors.alias("red.10"),
-          foreground: colors.alias("red.1"),
-          1: colors.alias("red.1"),
-          2: colors.alias("red.2"),
-          3: colors.alias("red.3"),
-          4: colors.alias("red.4"),
-          5: colors.alias("red.5"),
-          6: colors.alias("red.6"),
-          7: colors.alias("red.7"),
-          8: colors.alias("red.8"),
-          9: colors.alias("red.9"),
-          10: colors.alias("red.10"),
-          11: colors.alias("red.11"),
-          12: colors.alias("red.12"),
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
         },
-
-        border: colors.alias("gray.4"),
-        ring: colors.alias("gray.4"),
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        info: {
+          DEFAULT: "hsl(var(--info))",
+          foreground: "hsl(var(--info-foreground))",
+        },
       },
       borderRadius: {
-        radius: "0.5rem",
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
@@ -134,10 +99,6 @@ export const solistackTailwindPreset: Config = {
     forms,
     fluid,
     aspectRatio,
-    {
-      config: colors.plugin.config ?? {},
-      handler: colors.plugin.handler,
-    },
     {
       config: containerQueries.config ?? {},
       handler: containerQueries.handler,
