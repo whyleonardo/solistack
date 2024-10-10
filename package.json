@@ -46,7 +46,7 @@
     "@commitlint/cli": "19.4.0",
     "@commitlint/config-conventional": "19.2.2",
     "@commitlint/cz-commitlint": "19.4.0",
-    "@solistack/tsconfig": "workspace:*",
+    "@solistack/tsconfig": "workspace:^",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "commitizen": "4.3.0",
     "cspell": "8.13.1",

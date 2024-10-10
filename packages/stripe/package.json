@@ -8,7 +8,7 @@
     "stripe": "17.1.0"
   },
   "devDependencies": {
-    "@solistack/env": "workspace:*",
-    "@solistack/tsconfig": "workspace:*"
+    "@solistack/env": "workspace:^",
+    "@solistack/tsconfig": "workspace:^"
   }
 }

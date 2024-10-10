@@ -8,7 +8,7 @@
     "./web/db": "./src/web/db.ts"
   },
   "devDependencies": {
-    "@solistack/tsconfig": "workspace:*",
+    "@solistack/tsconfig": "workspace:^",
     "@t3-oss/env-core": "0.11.0",
     "@t3-oss/env-nextjs": "0.11.0",
     "zod": "3.23.8"
