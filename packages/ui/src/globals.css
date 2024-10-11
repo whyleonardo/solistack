@@ -20,15 +20,24 @@
     --accent-foreground: 0 0% 9%;
     --destructive: 358.09 75.12% 59.02%;
     --destructive-foreground: 0 0% 100%;
+    --destructive-subtle: 0 100% 96.08%;
+    --destructive-subtle-foreground: 358.14 65.71% 48.04%;
     --warning: 42.06 100% 61.96%;
     --warning-foreground: 37.14 100% 12.35%;
+    --warning-subtle: 43.9 100% 91.96%;
+    --warning-subtle-foreground: 30.18 100% 31.96%;
     --success: 131.25 41.03% 45.88%;
     --success-foreground: 0 0% 100%;
+    --success-subtle: 120 60% 95.1%;
+    --success-subtle-foreground: 132.59 49.69% 31.96%;
     --info: 206.12 100% 50%;
     --info-foreground: 0 0% 100%;
+    --info-subtle: 210 100% 96.08%;
+    --info-subtle-foreground: 210.84 100% 41.96%;
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
+
     --radius: 0.85rem;
 
     --chart-1: 12 76% 61%;
@@ -38,7 +47,7 @@
     --chart-5: 27 87% 67%;
   }
 
-  .dark {
+  :root[class~="dark"] {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
@@ -55,12 +64,20 @@
     --accent-foreground: 0 0% 98%;
     --destructive: 358.09 75.12% 59.02%;
     --destructive-foreground: 0 0% 100%;
+    --destructive-subtle: 356.84 46.34% 16.08%;
+    --destructive-subtle-foreground: 358.1 100% 69.02%;
     --warning: 42.06 100% 61.96%;
     --warning-foreground: 37.14 100% 12.35%;
+    --warning-subtle: 31.76 100% 10%;
+    --warning-subtle-foreground: 35.02 100% 51.96%;
     --success: 131.25 41.03% 45.88%;
     --success-foreground: 0 0% 100%;
+    --success-subtle: 137.42 50.82% 11.96%;
+    --success-subtle-foreground: 130.85 42.73% 56.86%;
     --info: 206.12 100% 50%;
     --info-foreground: 0 0% 100%;
+    --info-subtle: 214.67 58.44% 15.1%;
+    --info-subtle-foreground: 210.17 100% 66.08%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
