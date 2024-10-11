@@ -11,7 +11,7 @@ export { extract } from "fluid-tailwind"
 
 export const solistackTailwindPreset: Config = {
   content: { files: ["./src/**/*.{js,jsx,ts,tsx,mdx}"] },
-  darkMode: "class",
+  darkMode: ["class"],
   theme: {
     screens,
     fontSize,
@@ -49,18 +49,26 @@ export const solistackTailwindPreset: Config = {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+          subtle: "hsl(var(--destructive-subtle))",
+          "subtle-foreground": "hsl(var(--destructive-subtle-foreground))",
         },
         warning: {
           DEFAULT: "hsl(var(--warning))",
           foreground: "hsl(var(--warning-foreground))",
+          subtle: "hsl(var(--warning-subtle))",
+          "subtle-foreground": "hsl(var(--warning-subtle-foreground))",
         },
         success: {
           DEFAULT: "hsl(var(--success))",
           foreground: "hsl(var(--success-foreground))",
+          subtle: "hsl(var(--success-subtle))",
+          "subtle-foreground": "hsl(var(--success-subtle-foreground))",
         },
         info: {
           DEFAULT: "hsl(var(--info))",
           foreground: "hsl(var(--info-foreground))",
+          subtle: "hsl(var(--info-subtle))",
+          "subtle-foreground": "hsl(var(--info-subtle-foreground))",
         },
       },
       borderRadius: {
@@ -85,11 +93,16 @@ export const solistackTailwindPreset: Config = {
           "0%,70%,100%": { opacity: "1" },
           "20%,50%": { opacity: "0" },
         },
+        shine: {
+          from: { backgroundPosition: "200% 0" },
+          to: { backgroundPosition: "-200% 0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "caret-blink": "caret-blink 1.25s ease-out infinite",
+        shine: "shine 8s ease-in-out infinite",
       },
     },
   },
