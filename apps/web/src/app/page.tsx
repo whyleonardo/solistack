@@ -1,8 +1,5 @@
 import { ThemeToggle } from "@/components/theme-toggle"
 
-import { db } from "@solistack/db"
-import { users } from "@solistack/db/schema"
-
 const Page = () => {
   return (
     <div className="container relative mx-auto flex h-screen items-center justify-center">
