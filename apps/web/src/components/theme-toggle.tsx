@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes"
 
-import { cn } from "@solistack/tailwind/utils"
+import { cn } from "@solistack/ui/utils/cn"
 
 import { MoonIcon, SunIcon } from "lucide-react"
 

@@ -4,7 +4,7 @@ import type { Config } from "tailwindcss"
 
 const config = {
   content: {
-    files: ["./src/**/*.{js,ts,jsx,tsx,mdx}", "../../packages/ui/dist/**/*.js"],
+    files: ["./src/**/*.{ts,tsx}", "../../packages/ui/src/**/*.{ts,tsx}"],
     extract,
   },
   darkMode: ["class"],
