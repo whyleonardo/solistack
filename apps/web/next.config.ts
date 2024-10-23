@@ -1,11 +1,12 @@
+import type { NextConfig } from "next"
+
 import bundleAnalyzerPlugin from "@next/bundle-analyzer"
 
 const withBundleAnalyzer = bundleAnalyzerPlugin({
   enabled: process.env.ANALYZE === "true",
 })
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   transpilePackages: [
     "@solistack/auth",
     "@solistack/tailwind",

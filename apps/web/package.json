@@ -6,7 +6,7 @@
   "scripts": {
     "build": "next build",
     "clean": "rm -rf .next node_modules",
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "lint": "biome lint --diagnostic-level=error --no-errors-on-unmatched .",
     "start": "next start"
   },
@@ -16,10 +16,10 @@
     "@solistack/stripe": "workspace:^",
     "@total-typescript/ts-reset": "0.5.1",
     "lucide-react": "0.426.0",
-    "next": "14.2.5",
+    "next": "15.0.0",
     "next-themes": "0.3.0",
-    "react": "18.3.1",
-    "react-dom": "^18",
+    "react": "19.0.0-rc-45804af1-20241021",
+    "react-dom": "19.0.0-rc-45804af1-20241021",
     "sonner": "1.5.0"
   },
   "devDependencies": {
@@ -29,7 +29,7 @@
     "@solistack/tsconfig": "workspace:^",
     "@solistack/ui": "workspace:^",
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "18.3.11",
     "@types/react-dom": "^18",
     "dotenv": "16.4.5",
     "postcss": "^8",
