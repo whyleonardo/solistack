@@ -1,9 +1,0 @@
-{
-  "extends": ["astro/tsconfigs/strictest", "@solistack/tsconfig/react.json"],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  }
-}
