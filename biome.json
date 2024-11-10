@@ -3,8 +3,12 @@
   "extends": ["ultracite"],
   "linter": {
     "rules": {
+      "suspicious": {
+        "useAwait": "off"
+      },
       "style": {
-        "useNamingConvention": "off"
+        "useNamingConvention": "off",
+        "noNamespaceImport": "off"
       }
     }
   }
