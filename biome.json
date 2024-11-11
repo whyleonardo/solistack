@@ -19,6 +19,9 @@
         "useNamingConvention": "off",
         "noNamespaceImport": "off"
       },
+      "nursery": {
+        "useSortedClasses": "off"
+      },
       "performance": {
         "noBarrelFile": "off"
       }
