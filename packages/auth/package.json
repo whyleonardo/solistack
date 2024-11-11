@@ -7,6 +7,9 @@
     ".": "./auth.ts",
     "./client": "./client.ts"
   },
+  "dependencies": {
+    "better-auth": "0.8.2-beta.1"
+  },
   "devDependencies": {
     "@solistack/env": "workspace:*",
     "@solistack/ts-config": "workspace:*",
