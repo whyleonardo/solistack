@@ -1,6 +1,5 @@
 import { env } from '@solistack/env/web/client';
 
-import {} from '@solistack/api';
 import type { AppType } from './index.js';
 
 import { hc } from 'hono/client';
