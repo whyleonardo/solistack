@@ -3,6 +3,9 @@
   "extends": ["ultracite"],
   "linter": {
     "rules": {
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
       "suspicious": {
         "useAwait": "off"
       },
