@@ -11,6 +11,7 @@ export const env = createEnv({
     BETTER_AUTH_SECRET: z.string(),
     GITHUB_CLIENT_ID: z.string(),
     GITHUB_CLIENT_SECRET: z.string(),
+    FLAGS_SECRET: z.string().min(1),
   },
   experimental__runtimeEnv: {},
 })
