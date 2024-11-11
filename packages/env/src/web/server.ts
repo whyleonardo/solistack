@@ -7,11 +7,9 @@ import { env as dbEnv } from './db';
 export const env = createEnv({
   extends: [sharedEnv, dbEnv],
   server: {
-    DATABASE_URL: z.string().url(),
     BETTER_AUTH_SECRET: z.string(),
     GITHUB_CLIENT_ID: z.string(),
     GITHUB_CLIENT_SECRET: z.string(),
   },
-
   experimental__runtimeEnv: {},
 });
