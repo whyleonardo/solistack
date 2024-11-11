@@ -18,6 +18,9 @@
       "style": {
         "useNamingConvention": "off",
         "noNamespaceImport": "off"
+      },
+      "performance": {
+        "noBarrelFile": "off"
       }
     }
   }
