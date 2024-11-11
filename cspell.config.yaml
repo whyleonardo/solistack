@@ -1,9 +1,17 @@
 words:
   - biome
+  - clsx
+  - cmdk
+  - embla
+  - hookform
+  - lucide
+  - lucide-react
   - hono
   - neondatabase
   - openapi
   - solistack
+  - sonner
   - tanstack
   - turbopack
   - ultracite
+  - vaul
