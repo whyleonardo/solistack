@@ -1,8 +1,8 @@
 {
   "name": "@solistack/db",
   "version": "0.0.0",
-  "type": "module",
   "private": true,
+  "type": "module",
   "exports": {
     ".": "./index.ts",
     "./schemas/*": "./zod-schemas/*.ts"

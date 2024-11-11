@@ -1,9 +1,9 @@
 "use client"
 
 import * as React from "react"
-import * as SeparatorPrimitive from "@radix-ui/react-separator"
 
-import { cn } from '@solistack/tailwind/cn';
+import * as SeparatorPrimitive from "@radix-ui/react-separator"
+import { cn } from "@solistack/tailwind/cn"
 
 const Separator = React.forwardRef<
   React.ElementRef<typeof SeparatorPrimitive.Root>,
@@ -18,7 +18,7 @@ const Separator = React.forwardRef<
       decorative={decorative}
       orientation={orientation}
       className={cn(
-        "shrink-0 dark:bg-border/30 bg-border/60",
+        "dark:bg-border/30 bg-border/60 shrink-0",
         orientation === "horizontal" ? "h-[1px] w-full" : "h-full w-[1px]",
         className
       )}

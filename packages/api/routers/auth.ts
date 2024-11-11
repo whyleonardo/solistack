@@ -1,26 +1,25 @@
-import { auth } from '@solistack/auth';
+import { OpenAPIHono, createRoute, z } from "@hono/zod-openapi"
+import { auth } from "@solistack/auth"
+import { userSelectSchema } from "@solistack/db/schemas/user"
 
-import { userSelectSchema } from '@solistack/db/schemas/user';
-import { sessionMiddleware } from '../middlewares/session';
-
-import { OpenAPIHono, createRoute, z } from '@hono/zod-openapi';
+import { sessionMiddleware } from "../middlewares/session"
 
 const currentUserRoute = createRoute({
-  summary: 'Get the current user',
-  path: '/current',
-  method: 'get',
-  tags: ['Authentication'],
+  summary: "Get the current user",
+  path: "/current",
+  method: "get",
+  tags: ["Authentication"],
   responses: {
     200: {
       content: {
-        'application/json': {
+        "application/json": {
           schema: z.object({
             data: userSelectSchema,
           }),
           example: {
-            id: 'w2890hgr4j0',
-            name: 'user_123',
-            email: 'user_123@email.com',
+            id: "w2890hgr4j0",
+            name: "user_123",
+            email: "user_123@email.com",
             updatedAt: new Date(),
             createdAt: new Date(),
             emailVerified: true,
@@ -28,30 +27,30 @@ const currentUserRoute = createRoute({
           },
         },
       },
-      description: 'Successful response',
+      description: "Successful response",
     },
     401: {
       content: {
-        'application/json': {
+        "application/json": {
           schema: z.object({
-            error: z.string().openapi({ example: 'Unauthorized' }),
+            error: z.string().openapi({ example: "Unauthorized" }),
           }),
         },
       },
-      description: 'Unauthorized response',
+      description: "Unauthorized response",
     },
   },
   middleware: [sessionMiddleware] as const,
-});
+})
 
 const app = new OpenAPIHono()
   .openapi(currentUserRoute, (c) => {
-    const user = c.get('user');
+    const user = c.get("user")
 
-    return c.json({ data: user }, 200);
+    return c.json({ data: user }, 200)
   })
-  .on(['GET', 'POST'], '/*', (c) => {
-    return auth.handler(c.req.raw);
-  });
+  .on(["GET", "POST"], "/*", (c) => {
+    return auth.handler(c.req.raw)
+  })
 
-export default app;
+export default app

@@ -1,8 +1,8 @@
 {
   "name": "@solistack/api",
   "version": "0.0.0",
-  "type": "module",
   "private": true,
+  "type": "module",
   "exports": {
     ".": "./index.ts",
     "./rpc": "./rpc.ts"
@@ -12,11 +12,11 @@
     "server-only": "0.0.1"
   },
   "devDependencies": {
+    "@solistack/auth": "workspace:*",
+    "@solistack/db": "workspace:*",
     "@solistack/env": "workspace:*",
     "@solistack/ts-config": "workspace:*",
-    "@solistack/db": "workspace:*",
     "@types/node": "22.9.0",
-    "@solistack/auth": "workspace:*",
     "typescript": "5.6.3"
   }
 }

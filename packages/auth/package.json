@@ -1,8 +1,8 @@
 {
   "name": "@solistack/auth",
   "version": "0.0.0",
-  "type": "module",
   "private": true,
+  "type": "module",
   "exports": {
     ".": "./auth.ts",
     "./client": "./client.ts"

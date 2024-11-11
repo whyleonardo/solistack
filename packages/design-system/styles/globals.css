@@ -144,7 +144,6 @@
     text-rendering: optimizelegibility;
   }
   body {
-    @apply font-sans bg-background text-foreground min-h-[100dvh] touch-manipulation antialiased;
+    @apply bg-background text-foreground min-h-[100dvh] touch-manipulation font-sans antialiased;
   }
 }
-

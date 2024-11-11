@@ -1,10 +1,11 @@
-import 'server-only';
+import { OpenAPIHono } from "@hono/zod-openapi"
 
-import { OpenAPIHono } from '@hono/zod-openapi';
-import authRouter from './routers/auth';
+import "server-only"
 
-export const honoApp = new OpenAPIHono().basePath('/api');
+import authRouter from "./routers/auth"
 
-const routes = honoApp.route('/auth', authRouter);
+export const honoApp = new OpenAPIHono().basePath("/api")
 
-export type AppType = typeof routes;
+const routes = honoApp.route("/auth", authRouter)
+
+export type AppType = typeof routes

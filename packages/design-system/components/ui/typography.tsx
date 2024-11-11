@@ -1,6 +1,6 @@
 import type { FC, JSX, PropsWithChildren } from "react"
 
-import { cn } from '@solistack/tailwind/cn';
+import { cn } from "@solistack/tailwind/cn"
 
 import { type VariantProps, tv } from "tailwind-variants"
 
@@ -19,12 +19,12 @@ const typographyStyles = tv({
       lead: "text-muted-foreground text-xl",
       large: "text-lg font-semibold",
       small: "text-sm font-medium leading-none",
-      muted: "text-muted-foreground text-sm"
-    }
+      muted: "text-muted-foreground text-sm",
+    },
   },
   defaultVariants: {
-    variant: "p"
-  }
+    variant: "p",
+  },
 })
 
 type TypographyProps = VariantProps<typeof typographyStyles> & {
@@ -36,7 +36,7 @@ export const Typography: FC<PropsWithChildren<TypographyProps>> = ({
   as,
   className,
   variant,
-  children
+  children,
 }) => {
   if (as) {
     const Component = as

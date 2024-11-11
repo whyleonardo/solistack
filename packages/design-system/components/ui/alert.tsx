@@ -1,23 +1,22 @@
 import * as React from "react"
-import { tv, type VariantProps } from "tailwind-variants"
 
-import { cn } from '@solistack/tailwind/cn';
+import { cn } from "@solistack/tailwind/cn"
 
-const alertVariants = tv(
-  {
-    base: "relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground [&>svg~*]:pl-7",
-    variants: {
-      variant: {
-        default: "bg-background text-foreground",
-        destructive:
-          "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive",
-      },
+import { type VariantProps, tv } from "tailwind-variants"
+
+const alertVariants = tv({
+  base: "[&>svg]:text-foreground relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg~*]:pl-7",
+  variants: {
+    variant: {
+      default: "bg-background text-foreground",
+      destructive:
+        "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive",
     },
-    defaultVariants: {
-      variant: "default",
-    },
-  }
-)
+  },
+  defaultVariants: {
+    variant: "default",
+  },
+})
 
 const Alert = React.forwardRef<
   HTMLDivElement,

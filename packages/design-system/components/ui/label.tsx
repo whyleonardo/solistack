@@ -1,16 +1,15 @@
 "use client"
 
 import * as React from "react"
+
 import * as LabelPrimitive from "@radix-ui/react-label"
-import { tv, type VariantProps } from "tailwind-variants"
+import { cn } from "@solistack/tailwind/cn"
 
-import { cn } from '@solistack/tailwind/cn';
+import { type VariantProps, tv } from "tailwind-variants"
 
-const labelVariants = tv(
-  {
-    base: "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-  }
-)
+const labelVariants = tv({
+  base: "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+})
 
 const Label = React.forwardRef<
   React.ElementRef<typeof LabelPrimitive.Root>,

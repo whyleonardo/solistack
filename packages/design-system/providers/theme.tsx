@@ -1,7 +1,7 @@
-'use client';
+"use client"
 
-import { ThemeProvider as Provider } from 'next-themes';
-import type { ThemeProviderProps } from 'next-themes';
+import { ThemeProvider as Provider } from "next-themes"
+import type { ThemeProviderProps } from "next-themes"
 
 export const ThemeProvider = (properties: ThemeProviderProps) => (
   <Provider
@@ -11,4 +11,4 @@ export const ThemeProvider = (properties: ThemeProviderProps) => (
     disableTransitionOnChange
     {...properties}
   />
-);
+)

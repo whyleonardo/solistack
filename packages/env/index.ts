@@ -1,7 +1,8 @@
-import { createEnv } from '@t3-oss/env-nextjs';
+import { createEnv } from "@t3-oss/env-nextjs"
 
-import { z } from 'zod';
-import { sharedEnv } from './src/shared';
+import { z } from "zod"
+
+import { sharedEnv } from "./src/shared"
 
 export const env = createEnv({
   extends: [sharedEnv],
@@ -17,4 +18,4 @@ export const env = createEnv({
   experimental__runtimeEnv: {
     NEXT_PUBLIC_APP_BASE_URL: process.env.NEXT_PUBLIC_APP_BASE_URL,
   },
-});
+})

@@ -1,6 +1,6 @@
 import { useId } from "react"
 
-import { cn } from '@solistack/tailwind/cn';
+import { cn } from "@solistack/tailwind/cn"
 
 interface GridPatternProps {
   width?: number

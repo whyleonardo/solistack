@@ -1,11 +1,12 @@
 "use client"
 
 import * as React from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
 import { DayPicker } from "react-day-picker"
 
-import { cn } from '@solistack/tailwind/cn';
 import { buttonVariants } from "@solistack/design-system/components/ui/button"
+import { cn } from "@solistack/tailwind/cn"
+
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker>
 

@@ -1,8 +1,12 @@
 import * as React from "react"
-import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react"
 
-import { cn } from '@solistack/tailwind/cn';
-import { ButtonProps, buttonVariants } from "@solistack/design-system/components/ui/button"
+import {
+  ButtonProps,
+  buttonVariants,
+} from "@solistack/design-system/components/ui/button"
+import { cn } from "@solistack/tailwind/cn"
+
+import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react"
 
 const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
   <nav

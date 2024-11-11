@@ -1,9 +1,11 @@
-import { Toaster } from '@solistack/design-system/components/ui/sonner';
-import { TooltipProvider } from '@solistack/design-system/components/ui/tooltip';
-import type { ThemeProviderProps } from 'next-themes';
-import { ThemeProvider } from './theme';
+import type { ThemeProviderProps } from "next-themes"
 
-type DesignSystemProviderProperties = ThemeProviderProps;
+import { Toaster } from "@solistack/design-system/components/ui/sonner"
+import { TooltipProvider } from "@solistack/design-system/components/ui/tooltip"
+
+import { ThemeProvider } from "./theme"
+
+type DesignSystemProviderProperties = ThemeProviderProps
 
 export const DesignSystemProvider = ({
   children,
@@ -13,4 +15,4 @@ export const DesignSystemProvider = ({
     <TooltipProvider>{children}</TooltipProvider>
     <Toaster />
   </ThemeProvider>
-);
+)
