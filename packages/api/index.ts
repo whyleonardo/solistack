@@ -1,3 +1,5 @@
+import 'server-only';
+
 import { OpenAPIHono } from '@hono/zod-openapi';
 import authRouter from './routers/auth';
 
