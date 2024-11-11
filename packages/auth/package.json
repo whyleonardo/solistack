@@ -8,6 +8,7 @@
     "./client": "./client.ts"
   },
   "dependencies": {
+    "@solistack/db": "workspace:*",
     "better-auth": "0.8.2-beta.1"
   },
   "devDependencies": {
