@@ -1,7 +1,5 @@
 import { captureException } from "@sentry/nextjs"
 
-import { log } from "./logtail"
-
 export const parseError = (error: unknown): string => {
   let message = "An error occurred"
 
@@ -15,7 +13,8 @@ export const parseError = (error: unknown): string => {
 
   try {
     captureException(error)
-    log.error(`Parsing error: ${message}`)
+    // biome-ignore lint/suspicious/noConsole: Need console here
+    console.error(`Parsing error: ${message}`)
   } catch (newError) {
     // biome-ignore lint/suspicious/noConsole: Need console here
     console.error("Error parsing error:", newError)

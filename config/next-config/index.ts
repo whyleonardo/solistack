@@ -61,7 +61,7 @@ export const sentryConfig: Parameters<typeof withSentryConfig>[1] = {
   project: env.SENTRY_PROJECT,
 
   // Only print logs for uploading source maps in CI
-  silent: false,
+  silent: !process.env.CI,
 
   /*
    * For all available options, see:
@@ -96,5 +96,3 @@ export const sentryConfig: Parameters<typeof withSentryConfig>[1] = {
 
 export const withSentry = (sourceConfig: NextConfig): NextConfig =>
   withSentryConfig(sourceConfig, sentryConfig)
-
-export { withLogtail } from "@logtail/next"

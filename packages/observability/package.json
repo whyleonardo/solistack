@@ -4,12 +4,13 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@logtail/next": "0.1.5",
     "@sentry/nextjs": "8.37.1",
     "@solistack/env": "workspace:*",
     "react": "19.0.0-rc-ed15d500-20241110"
   },
   "devDependencies": {
+    "@solistack/design-system": "workspace:*",
+    "@solistack/tailwind": "workspace:*",
     "@solistack/ts-config": "workspace:*",
     "@types/node": "22.9.0",
     "@types/react": "18.3.12",
