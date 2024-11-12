@@ -1,11 +1,15 @@
 import { posthog } from "@solistack/analytics/posthog/server"
 import { db } from "@solistack/db"
+import { env as envClient } from "@solistack/env/web/client"
 import { env } from "@solistack/env/web/server"
 
 import { betterAuth } from "better-auth"
 import { drizzleAdapter } from "better-auth/adapters/drizzle"
 
 export const auth = betterAuth({
+  baseURL: envClient.NEXT_PUBLIC_API_BASE_URL,
+  trustedOrigins: [...env.ALLOWED_ORIGINS.split(",")],
+  secret: env.BETTER_AUTH_SECRET,
   database: drizzleAdapter(db, {
     provider: "pg",
   }),
@@ -18,7 +22,6 @@ export const auth = betterAuth({
       clientSecret: env.GITHUB_CLIENT_SECRET,
     },
   },
-  secret: env.BETTER_AUTH_SECRET,
   databaseHooks: {
     user: {
       create: {
