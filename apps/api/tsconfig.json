@@ -1,5 +1,11 @@
 {
   "extends": ["@solistack/ts-config/nextjs.json"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
   "include": [
     "next-env.d.ts",
     "next.config.ts",

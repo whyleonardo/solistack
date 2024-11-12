@@ -1,10 +1,12 @@
 words:
+  - betterstack
   - biome
   - biomejs
   - clsx
   - cmdk
   - embla
   - hookform
+  - logtail
   - lucide
   - lucide-react
   - hono
@@ -22,4 +24,5 @@ words:
   - turbopack
   - ultracite
   - vaul
+  - whsec
   - whyleonardo
