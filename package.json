@@ -2,6 +2,7 @@
   "name": "solistack",
   "private": true,
   "type": "module",
+  "bin": "",
   "workspaces": [
     "apps/*",
     "packages/*",
@@ -14,7 +15,11 @@
     "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
     "format:write": "prettier \"**/*\" --ignore-unknown --list-different --write",
     "lint": "turbo lint",
-    "migrate": "cd packages/db && npx drizzle-kit generate && npx drizzle-kit push"
+    "migrate": "cd packages/db && npx drizzle-kit generate && npx drizzle-kit push",
+    "setup": "bun ./scripts/init.js"
+  },
+  "dependencies": {
+    "@types/bun": "1.1.13"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
