@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev -p 3333",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@scalar/hono-api-reference": "0.5.159",
+    "@solistack/api": "workspace:*",
+    "@solistack/next-config": "workspace:*",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
+  },
+  "devDependencies": {
+    "@solistack/ts-config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}
