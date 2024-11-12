@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@scalar/hono-api-reference": "0.5.159",
+    "@solistack/analytics": "workspace:*",
     "@solistack/api": "workspace:*",
+    "@solistack/db": "workspace:*",
     "@solistack/next-config": "workspace:*",
+    "@solistack/payments": "workspace:*",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
