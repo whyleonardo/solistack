@@ -15,11 +15,24 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@solistack/design-system/components/ui/dropdown-menu"
+import { Skeleton } from "@solistack/design-system/components/ui/skeleton"
 
 import { SignOutButton } from "./sign-out-button"
 
 export const UserButton = () => {
-  const { data } = useCurrentUser()
+  const {
+    data,
+    isLoading: isLoadingCurrentUser,
+    isFetching: isFetchingCurrentUser,
+  } = useCurrentUser()
+
+  if (isLoadingCurrentUser || isFetchingCurrentUser) {
+    return (
+      <div>
+        <Skeleton className="size-12 rounded-full" />
+      </div>
+    )
+  }
 
   if (!data) {
     return null
