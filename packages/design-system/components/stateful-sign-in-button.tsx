@@ -58,7 +58,7 @@ const StatefulSignInIcon = ({
         )}
       />
 
-      <CheckIcon className="text-success absolute left-0 top-0 scale-0 group-data-[success=true]:scale-100" />
+      <CheckIcon className="text-success absolute left-0 top-0 scale-0 transition-transform duration-300 group-data-[success=true]:scale-100" />
 
       <div
         className={cn(
