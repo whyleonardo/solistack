@@ -18,7 +18,7 @@ const HomePage = async () => {
   }
 
   return (
-    <main>
+    <main className="flex h-screen items-center justify-center">
       <UserButton />
     </main>
   )
