@@ -1,13 +1,9 @@
 {
-  "name": "@solistack/tsconfig",
-  "version": "0.2.0",
+  "name": "@solistack/ts-config",
+  "version": "0.0.0",
   "private": true,
-  "type": "module",
-  "files": [
-    "./base.json",
-    "./next.json",
-    "./build.json",
-    "./react.json",
-    "./dom.json"
-  ]
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
 }

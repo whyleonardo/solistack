@@ -1,0 +1,16 @@
+{
+  "name": "@solistack/payments",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "server-only": "0.0.1",
+    "stripe": "17.3.1"
+  },
+  "devDependencies": {
+    "@solistack/env": "workspace:*",
+    "@solistack/ts-config": "workspace:*",
+    "@types/node": "22.9.0",
+    "typescript": "5.6.3"
+  }
+}

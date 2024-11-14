@@ -1,63 +1,18 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalPassThroughEnv": [
-    "VERCEL_URL",
-    "NODE_ENV",
-    "CI",
-    "SKIP_ENV_VALIDATION",
-    "PORT"
-  ],
   "ui": "stream",
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "inputs": [
-        "$TURBO_DEFAULT$",
-        "!.env.example",
-        ".env.production.local",
-        ".env.local",
-        ".env.production",
-        ".env"
-      ],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {
       "dependsOn": ["^lint"]
     },
     "dev": {
-      "dependsOn": ["^build"],
-      "cache": false,
-      "persistent": true,
-      "inputs": [
-        "$TURBO_DEFAULT$",
-        ".env.development.local",
-        ".env.local",
-        ".env.development",
-        ".env"
-      ]
-    },
-    "db:migrate": {
-      "dependsOn": ["db:generate"],
-      "passThroughEnv": ["DATABASE_URL"],
-      "inputs": ["drizzle/**"]
-    },
-    "db:generate": {
-      "passThroughEnv": ["DATABASE_URL"],
-      "inputs": ["src/schema/**", "drizzle.config.ts"],
-      "outputs": ["drizzle/**"]
-    },
-    "db:studio": {
       "cache": false,
       "persistent": true
-    },
-    "db:check": { "cache": false },
-    "db:migrate:drop": { "cache": false },
-    "db:pull": { "cache": false },
-    "db:push": { "cache": false },
-    "db:up": { "cache": false },
-    "lint:spell": {},
-    "clean": {
-      "cache": false
     }
   }
 }

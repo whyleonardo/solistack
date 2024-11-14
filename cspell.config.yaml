@@ -1,137 +1,27 @@
-$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
-version: "0.2"
-ignorePaths:
-  - .git
-  - bun.lockb
-  - ./branch_out
-  - .changeset
-  - drizzle
-  - "**/*.svg"
-  - .vscode
-  - "**/migrations"
-  - "**/schema.prisma"
-  - "**/analyze"
-  - "**/.next"
-  - "**/tsconfig.build.tsbuildinfo"
 words:
-  - acst
-  - aest
-  - Activedescendant
-  - Tabindex
-  - Focusable
-  - Autofocus
-  - Noninteractive
-  - akst
-  - Anson
-  - boleto
-  - datasource
-  - bitnami
-  - Preact
-  - rarr
-  - astro
-  - astrojs
-  - autodocs
-  - autoplay
-  - awst
-  - Beamer
-  - Binni
+  - betterstack
+  - biome
   - biomejs
-  - branchname
-  - bunx
-  - bvaughn
-  - Byrom
-  - callees
-  - cjsx
-  - classname
   - clsx
   - cmdk
-  - codespace
-  - codespaces
-  - Colm
-  - commitlint
-  - commitlintrc
-  - compat
-  - consts
-  - crossorigin
-  - ctsx
-  - datetime
-  - dbaeumer
-  - degit
-  - dotenv
-  - dsznajder
-  - Duarte
-  - Embla
-  - esbenp
+  - embla
   - hookform
-  - Elipssis
-  - ixahmedxi
-  - jiti
-  - jscoverage
-  - jspm
-  - kohler
-  - lockb
   - lucide
-  - Malyavko
-  - microbundle
-  - mikestead
-  - minimise
-  - Mintlify
-  - mjsx
-  - monorepoing
-  - mtsx
-  - neonctl
+  - lucide-react
+  - hono
   - neondatabase
   - nextjs
-  - nuxt
-  - nzst
-  - onwarn
-  - optimisations
-  - orbitkit
-  - Ornella
-  - packagejson
-  - pacocoursey
-  - pageview
-  - peduarte
-  - pids
-  - posthog
-  - quickstart
-  - Ratelimit
-  - shadcn
+  - openapi
   - solistack
-  - sslmode
-  - starterkit
-  - starterkits
-  - stylelint
-  - stylelintcache
   - sonner
-  - stylesheet
-  - superjson
-  - tada
-  - tailwindcss
-  - tamasfe
+  - packagejson
+  - pageview
+  - pageleave
+  - posthog
   - tanstack
-  - thollander
-  - todos
-  - topbar
-  - transpiles
-  - treeshake
   - trivago
-  - trpc
-  - tsbuildinfo
-  - tsconfigs
-  - tsup
-  - Tuite
-  - turborepo
-  - typecheck
-  - typeof
-  - typesafe
-  - unifiedjs
-  - unkey
-  - uploadthing
+  - turbopack
+  - ultracite
   - vaul
-  - viewports
-  - vuepress
-  - WITA
-  - wscript
-  - yoav
-  - Vercel
+  - whsec
+  - whyleonardo

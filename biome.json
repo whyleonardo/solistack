@@ -1,5 +1,6 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["ultracite"],
   "organizeImports": {
     "enabled": false
   },
@@ -7,22 +8,22 @@
     "enabled": false
   },
   "linter": {
-    "enabled": true,
-    "ignore": ["node_modules", "dist"],
     "rules": {
-      "recommended": true,
-      "correctness": {
-        "noUnusedImports": "error",
-        "noUnusedVariables": "error"
-      },
-      "suspicious": {
-        "noConsoleLog": "error"
-      },
       "a11y": {
         "noSvgWithoutTitle": "off"
       },
+      "suspicious": {
+        "useAwait": "off"
+      },
       "style": {
-        "noNonNullAssertion": "off"
+        "useNamingConvention": "off",
+        "noNamespaceImport": "off"
+      },
+      "nursery": {
+        "useSortedClasses": "off"
+      },
+      "performance": {
+        "noBarrelFile": "off"
       }
     }
   }
