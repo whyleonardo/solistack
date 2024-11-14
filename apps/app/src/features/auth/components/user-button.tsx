@@ -16,6 +16,7 @@ import {
   DropdownMenuTrigger,
 } from "@solistack/design-system/components/ui/dropdown-menu"
 import { Skeleton } from "@solistack/design-system/components/ui/skeleton"
+import { Typography } from "@solistack/design-system/components/ui/typography"
 
 import { SignOutButton } from "./sign-out-button"
 
@@ -28,8 +29,15 @@ export const UserButton = () => {
 
   if (isLoadingCurrentUser || isFetchingCurrentUser) {
     return (
-      <div>
-        <Skeleton className="size-12 rounded-full" />
+      <div className="bg-accent/10 rounded-xl border p-3">
+        <div className="flex items-center gap-2">
+          <Skeleton className="size-10 rounded-xl" />
+
+          <div className="flex flex-col gap-1">
+            <Skeleton className="h-3 w-28" />
+            <Skeleton className="h-2.5 w-36" />
+          </div>
+        </div>
       </div>
     )
   }
@@ -41,24 +49,31 @@ export const UserButton = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        className="cursor-pointer overflow-hidden border p-px transition hover:opacity-80"
+        className="bg-accent/10 cursor-pointer overflow-hidden rounded-xl border p-3 transition hover:opacity-80"
         asChild
       >
-        <Avatar className="size-12">
-          <AvatarImage
-            src={data.image as string}
-            alt={data.name}
-            className="rounded-full"
-          />
-          <AvatarFallback className="bg-primary-foreground uppercase">
-            {data.name[0]}
-          </AvatarFallback>
-        </Avatar>
+        <div className="flex items-center gap-2">
+          <Avatar className="size-10 rounded-xl">
+            <AvatarImage src={data.image as string} alt={data.name} />
+            <AvatarFallback className="bg-primary-foreground rounded-xl uppercase">
+              {data.name[0]}
+            </AvatarFallback>
+          </Avatar>
+
+          <div className="flex flex-col">
+            <Typography variant="p" className="leading-4">
+              {data.name}
+            </Typography>
+            <Typography className="text-xs font-medium" variant="muted">
+              {data.email}
+            </Typography>
+          </div>
+        </div>
       </DropdownMenuTrigger>
 
       <DropdownMenuContent
         className="min-w-56 select-none rounded-lg"
-        align="end"
+        align="center"
         sideOffset={4}
         side="bottom"
       >
