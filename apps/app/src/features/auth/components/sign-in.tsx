@@ -23,7 +23,7 @@ export const SignIn = () => {
     <div className="flex flex-col gap-2">
       <StatefulSignInButton
         size="lg"
-        variant="outline"
+        variant="accent"
         onClick={handleGithubLogin}
         disabled={isPendingGithub}
         isSuccess={isSuccess}

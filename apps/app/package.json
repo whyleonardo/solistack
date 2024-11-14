@@ -19,6 +19,7 @@
     "@solistack/observability": "workspace:*",
     "@solistack/seo": "workspace:*",
     "@tanstack/react-query": "5.59.20",
+    "lucide-react": "0.456.0",
     "next": "15.0.3",
     "next-themes": "0.4.3",
     "react": "19.0.0-rc-5c56b873-20241107",
