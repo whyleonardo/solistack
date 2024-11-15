@@ -2,6 +2,47 @@
   "name": "@solistack/design-system",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
+  "exports": {
+    "./primitives/*": {
+      "types": "./dist/components/ui/*.d.ts",
+      "require": "./dist/components/ui/*.cjs",
+      "default": "./dist/components/ui/*.js"
+    },
+    "./icons": {
+      "types": "./dist/components/icons.d.ts",
+      "require": "./dist/components/icons.cjs",
+      "default": "./dist/components/icons.js"
+    },
+    "./credenza": {
+      "types": "./dist/components/credenza.d.ts",
+      "require": "./dist/components/credenza.cjs",
+      "default": "./dist/components/credenza.js"
+    },
+    "./cn": {
+      "types": "./dist/lib/cn.d.ts",
+      "require": "./dist/lib/cn.cjs",
+      "default": "./dist/lib/cn.js"
+    },
+    "./hooks/*": {
+      "types": "./dist/hooks/*.d.ts",
+      "require": "./dist/hooks/*.cjs",
+      "default": "./dist/hooks/*.js"
+    },
+    "./fonts": "./src/lib/fonts.ts",
+    "./status": "./src/components/status.tsx",
+    "./globals": "./src/styles/globals.css",
+    "./providers": "./src/providers/index.tsx",
+    "./toast-handle-error": "./src/utils/toast-handle-error.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build -w",
+    "typecheck": "tsc"
+  },
   "dependencies": {
     "@hookform/resolvers": "3.9.1",
     "@radix-ui/react-accordion": "1.2.1",
@@ -56,6 +97,7 @@
   "devDependencies": {
     "@solistack/env": "workspace:*",
     "@solistack/ts-config": "workspace:*",
+    "@solistack/vite": "workspace:^",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "autoprefixer": "10.4.20",
