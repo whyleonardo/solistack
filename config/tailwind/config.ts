@@ -11,12 +11,9 @@ export const config: Config = {
   content: {
     files: [
       // TODO: WORK ON THIS
-      "../../node_modules/@solistack/design-system/components/**/*.{ts,tsx}",
-      "./components/**/*.{ts,tsx}",
-      "./lib/**/*.{ts,tsx}",
-      "./app/**/*.{ts,tsx}",
-      "./providers/**/*.{ts,tsx}",
+      "../../packages/design-system/dist/components/**/*.js",
       "./src/**/*.{ts,tsx}",
+      "./app/**/*.{ts,tsx}",
     ],
     extract,
   },
