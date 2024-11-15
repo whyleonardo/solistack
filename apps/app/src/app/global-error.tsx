@@ -1,10 +1,12 @@
 "use client"
 
-import NextError from "next/error"
 import { useEffect } from "react"
 
+import NextError from "next/error"
+
 import * as Sentry from "@sentry/nextjs"
-import { handleError } from "@solistack/design-system/lib/utils"
+
+import { toastHandleError } from "@solistack/design-system/toast-handle-error"
 
 /**
  * A global error component that logs the error to Sentry.
@@ -15,7 +17,7 @@ import { handleError } from "@solistack/design-system/lib/utils"
 export default function GlobalError({ error }: { error: Error }) {
   useEffect(() => {
     Sentry.captureException(error)
-    handleError(error)
+    toastHandleError(error)
   }, [error])
 
   return (

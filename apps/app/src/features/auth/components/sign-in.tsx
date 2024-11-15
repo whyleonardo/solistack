@@ -1,12 +1,12 @@
 "use client"
 
-import { useOAuthSignIn } from "@/features/auth/controllers/use-oauth-sign-in"
+import { Icons } from "@solistack/design-system/icons"
 
-import { Icons } from "@solistack/design-system/components/icons"
 import {
   StatefulSignInButton,
   StatefulSignInIcon,
-} from "@solistack/design-system/components/stateful-sign-in-button"
+} from "@/components/stateful-sign-in-button"
+import { useOAuthSignIn } from "@/features/auth/controllers/use-oauth-sign-in"
 
 export const SignIn = () => {
   const {

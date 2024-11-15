@@ -1,11 +1,12 @@
 import type { Metadata } from "next/types"
 
+import { Button } from "@solistack/design-system/primitives/button"
+import { Typography } from "@solistack/design-system/primitives/typography"
+import { createMetadata } from "@solistack/seo/metadata"
+
 import { SignIn } from "@/features/auth/components/sign-in"
 import { getSession } from "@/features/auth/utils/get-session"
 import { protectRoute } from "@/features/auth/utils/protect-route"
-
-import { Typography } from "@solistack/design-system/components/ui/typography"
-import { createMetadata } from "@solistack/seo/metadata"
 
 const title = "Welcome!"
 const description = "Use your OAuth account to login"

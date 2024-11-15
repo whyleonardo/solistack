@@ -2,14 +2,13 @@
 
 import type { ReactNode } from "react"
 
-import { PostHogIdentifier } from "@/components/posthog-identifier"
-
-import { QueryProvider } from "@/providers/query-provider"
-
-import { fonts } from "@solistack/design-system/lib/fonts"
+import { cn } from "@solistack/design-system/cn"
+import { fonts } from "@solistack/design-system/fonts"
+import "@solistack/design-system/globals"
 import { DesignSystemProvider } from "@solistack/design-system/providers"
-import "@solistack/design-system/styles/globals.css"
-import { cn } from "@solistack/tailwind/cn"
+
+import { PostHogIdentifier } from "@/components/posthog-identifier"
+import { QueryProvider } from "@/providers/query-provider"
 
 interface RootLayoutProps {
   readonly children: ReactNode
