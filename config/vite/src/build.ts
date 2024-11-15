@@ -54,6 +54,7 @@ export function buildConfig({
           }),
         ],
         output: {
+          dir: "dist",
           preserveModules: true,
         },
         treeshake: true,
