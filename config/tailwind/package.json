@@ -2,6 +2,10 @@
   "name": "@solistack/tailwind",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "clean": "bun run rm -rf *.tsbuildinfo",
+    "typecheck": "tsc"
+  },
   "dependencies": {
     "clsx": "2.1.1",
     "tailwind-merge": "2.5.4"

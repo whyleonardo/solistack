@@ -3,6 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "bun run rm -rf *.tsbuildinfo dist",
+    "dev": "tsc -w -p tsconfig.build.json",
+    "typecheck": "tsc"
+  },
   "dependencies": {
     "server-only": "0.0.1",
     "stripe": "17.3.1"

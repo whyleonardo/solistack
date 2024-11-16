@@ -3,7 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
-  "devDependencies": {
-    "typescript": "^5.6.3"
+  "files": [
+    "./base.json",
+    "./next.json",
+    "./react-library.json",
+    "./build.json"
+  ],
+  "scripts": {
+    "clean": "bun run rm -rf *.tsbuildinfo",
+    "typecheck": "tsc"
   }
 }

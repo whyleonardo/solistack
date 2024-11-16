@@ -3,6 +3,22 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "exports": {
+    "./parse-error": {
+      "types": "./dist/error.d.ts",
+      "default": "./dist/error.js"
+    },
+    "./get-status": {
+      "types": "./dist/status/get.d.ts",
+      "default": "./dist/status/get.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "bun run rm -rf *.tsbuildinfo dist node_modules",
+    "dev": "tsc -w -p tsconfig.build.json",
+    "typecheck": "tsc"
+  },
   "dependencies": {
     "@sentry/nextjs": "8.37.1",
     "@solistack/env": "workspace:*",

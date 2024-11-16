@@ -40,6 +40,7 @@
   ],
   "scripts": {
     "build": "vite build",
+    "clean": "bun run rm -rf node_modules dist *.tsbuildinfo",
     "dev": "vite build -w",
     "typecheck": "tsc"
   },

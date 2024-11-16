@@ -27,6 +27,8 @@ out/
 build
 dist
 
+# TypeScript cache
+**/*.tsbuildinfo
 
 # Debug
 npm-debug.log*

@@ -10,13 +10,15 @@
   ],
   "scripts": {
     "build": "turbo build",
+    "clean": "bun run rm -rf .turbo node_modules",
     "dev": "turbo dev",
     "format": "bun format:write",
     "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
     "format:write": "prettier \"**/*\" --ignore-unknown --list-different --write",
     "lint": "turbo lint",
     "migrate": "cd packages/db && npx drizzle-kit generate && npx drizzle-kit push",
-    "setup": "bun ./scripts/init.js"
+    "setup": "bun ./scripts/init.js",
+    "turbo": "turbo dev --concurrency 14"
   },
   "dependencies": {
     "@types/bun": "1.1.13"

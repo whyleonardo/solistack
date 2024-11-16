@@ -2,6 +2,10 @@
   "name": "@solistack/next-config",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "clean": "bun run rm -rf *.tsbuildinfo",
+    "typecheck": "tsc"
+  },
   "dependencies": {
     "@sentry/nextjs": "8.37.1",
     "@vercel/toolbar": "0.1.26",

@@ -4,8 +4,20 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./index.ts",
-    "./rpc": "./rpc.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./rpc": {
+      "types": "./dist/rpc.d.ts",
+      "default": "./dist/rpc.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "bun run rm -rf dist *.tsbuildinfo",
+    "dev": "tsc -w -p tsconfig.build.json",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@hono/zod-openapi": "0.17.0",

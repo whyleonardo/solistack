@@ -1,1 +1,1 @@
-{"root":["./dist/build.d.ts","./dist/index.d.ts","./dist/merge-config.d.ts","./dist/react.d.ts","./src/build.ts","./src/index.ts","./src/merge-config.ts","./src/react.ts"],"version":"5.6.3"}
+{"root":["./src/build.ts","./src/index.ts","./src/merge-config.ts","./src/react.ts"],"version":"5.6.3"}

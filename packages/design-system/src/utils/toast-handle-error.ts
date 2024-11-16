@@ -1,4 +1,4 @@
-import { parseError } from "@solistack/observability/error"
+import { parseError } from "@solistack/observability/parse-error"
 
 import { toast } from "sonner"
 
