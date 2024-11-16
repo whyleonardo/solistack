@@ -1,12 +1,10 @@
 "use client"
 
-import { useCurrentUser } from "@/features/auth/controllers/use-current-user"
-
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@solistack/design-system/components/ui/avatar"
+} from "@solistack/design-system/primitives/avatar"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,9 +12,11 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@solistack/design-system/components/ui/dropdown-menu"
-import { Skeleton } from "@solistack/design-system/components/ui/skeleton"
-import { Typography } from "@solistack/design-system/components/ui/typography"
+} from "@solistack/design-system/primitives/dropdown-menu"
+import { Skeleton } from "@solistack/design-system/primitives/skeleton"
+import { Typography } from "@solistack/design-system/primitives/typography"
+
+import { useCurrentUser } from "@/features/auth/controllers/use-current-user"
 
 import { SignOutButton } from "./sign-out-button"
 
