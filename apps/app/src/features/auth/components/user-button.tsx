@@ -16,7 +16,7 @@ import {
 import { Skeleton } from "@solistack/design-system/primitives/skeleton"
 import { Typography } from "@solistack/design-system/primitives/typography"
 
-import { useCurrentUser } from "@/features/auth/controllers/use-current-user"
+import { useCurrentUser } from "@/features/auth/queries/use-current-user"
 
 import { SignOutButton } from "./sign-out-button"
 

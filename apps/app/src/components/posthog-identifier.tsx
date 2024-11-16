@@ -1,11 +1,12 @@
 "use client"
 
-import { usePathname, useSearchParams } from "next/navigation"
 import { useEffect, useRef } from "react"
 
-import { useCurrentUser } from "@/features/auth/controllers/use-current-user"
+import { usePathname, useSearchParams } from "next/navigation"
 
 import { posthog } from "@solistack/analytics/posthog/client"
+
+import { useCurrentUser } from "@/features/auth/queries/use-current-user"
 
 export const PostHogIdentifier = () => {
   const { data: user } = useCurrentUser()

@@ -6,7 +6,7 @@ import {
   StatefulSignInButton,
   StatefulSignInIcon,
 } from "@/components/stateful-sign-in-button"
-import { useOAuthSignIn } from "@/features/auth/controllers/use-oauth-sign-in"
+import { useOAuthSignIn } from "@/features/auth/queries/use-oauth-sign-in"
 
 export const SignIn = () => {
   const {

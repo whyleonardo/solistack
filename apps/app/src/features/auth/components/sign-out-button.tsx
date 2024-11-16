@@ -1,6 +1,6 @@
 "use client"
 
-import { useSignOut } from "@/features/auth/controllers/use-sign-out"
+import { useSignOut } from "@/features/auth/queries/use-sign-out"
 
 import { LogOutIcon } from "lucide-react"
 
