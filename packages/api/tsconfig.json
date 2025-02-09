@@ -1,7 +1,0 @@
-{
-  "extends": ["@solistack/ts-config/base.json"],
-  "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist"
-  }
-}

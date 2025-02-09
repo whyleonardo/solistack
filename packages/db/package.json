@@ -8,9 +8,9 @@
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
-    "./schemas/*": {
-      "types": "./dist/zod-schemas/*.d.ts",
-      "default": "./dist/zod-schemas/*.js"
+    "./schemas": {
+      "types": "./dist/schemas/index.d.ts",
+      "default": "./dist/schemas/index.js"
     }
   },
   "scripts": {
@@ -28,16 +28,16 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@neondatabase/serverless": "0.10.3",
-    "drizzle-orm": "0.36.1",
-    "drizzle-zod": "0.5.1",
+    "@neondatabase/serverless": "0.10.4",
+    "drizzle-orm": "0.39.2",
+    "drizzle-zod": "0.7.0",
     "postgres": "3.4.5"
   },
   "devDependencies": {
     "@solistack/env": "workspace:*",
     "@solistack/ts-config": "workspace:*",
-    "@types/node": "22.9.0",
-    "drizzle-kit": "0.28.0",
-    "typescript": "5.6.3"
+    "@types/node": "22.13.1",
+    "drizzle-kit": "0.30.4",
+    "typescript": "5.7.3"
   }
 }

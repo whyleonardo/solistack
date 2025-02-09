@@ -1,3 +1,0 @@
-{
-  "extends": ["./tsconfig.json", "@solistack/ts-config/build.json"]
-}

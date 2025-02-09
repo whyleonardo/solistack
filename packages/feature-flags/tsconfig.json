@@ -1,3 +1,0 @@
-{
-  "extends": ["@solistack/ts-config/react-library.json"]
-}
