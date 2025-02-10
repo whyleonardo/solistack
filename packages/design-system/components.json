@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "iconLibrary": "lucide",
+  "tailwind": {
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "config": "../../config/tailwind/config.ts",
+    "css": "styles/globals.css"
+  },
+  "aliases": {
+    "components": "@solistack/design-system/components",
+    "utils": "@solistack/design-system/lib/utils",
+    "hooks": "@solistack/design-system/hooks",
+    "lib": "@solistack/design-system/lib",
+    "ui": "@solistack/design-system/components/ui"
+  }
+}

@@ -17,17 +17,17 @@
     "build": "tsc -p tsconfig.build.json",
     "clean": "bun run rm -rf dist *.tsbuildinfo",
     "dev": "tsc -w -p tsconfig.build.json",
-    "gen": "bunx @better-auth/cli generate",
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@solistack/analytics": "workspace:*",
     "@solistack/db": "workspace:*",
-    "better-auth": "1.1.16"
+    "better-auth": "0.8.2-beta.1"
   },
   "devDependencies": {
     "@solistack/env": "workspace:*",
     "@solistack/ts-config": "workspace:*",
-    "@types/node": "22.13.1",
-    "typescript": "5.7.3"
+    "@types/node": "22.9.0",
+    "typescript": "5.6.3"
   }
 }
