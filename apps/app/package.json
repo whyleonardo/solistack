@@ -1,0 +1,41 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev -p 3000",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@scalar/hono-api-reference": "0.5.159",
+    "@sentry/nextjs": "8.37.1",
+    "@solistack/auth": "workspace:*",
+    "@solistack/design-system": "workspace:*",
+    "@solistack/env": "workspace:*",
+    "@solistack/feature-flags": "workspace:*",
+    "@solistack/next-config": "workspace:*",
+    "@solistack/observability": "workspace:*",
+    "@solistack/seo": "workspace:*",
+    "@tanstack/react-query": "5.59.20",
+    "lucide-react": "0.456.0",
+    "next": "15.0.3",
+    "next-themes": "0.4.3",
+    "react": "19.0.0-rc-5c56b873-20241107",
+    "react-dom": "19.0.0-rc-5c56b873-20241107",
+    "tailwind-variants": "0.3.0"
+  },
+  "devDependencies": {
+    "@solistack/ts-config": "workspace:*",
+    "@tanstack/react-query-devtools": "5.59.20",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.48",
+    "tailwindcss": "3.4.14",
+    "typescript": "^5"
+  },
+  "@solistack/design-system": "workspace:*"
+}

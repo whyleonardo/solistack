@@ -1,12 +1,12 @@
-import { dbEnv } from "@solistack/env/db"
+import { env } from "@solistack/env/web/db"
 
 import { defineConfig } from "drizzle-kit"
 
 export default defineConfig({
   out: ".drizzle",
   dialect: "postgresql",
-  schema: ["./src/schemas"],
+  schema: ["./schemas"],
   dbCredentials: {
-    url: dbEnv.DATABASE_URL,
+    url: env.DATABASE_URL,
   },
 })

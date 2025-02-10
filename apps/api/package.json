@@ -1,21 +1,29 @@
 {
   "name": "api",
-  "version": "1.0.50",
-  "module": "src/index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "bun run --watch src/http/server.ts"
+    "build": "next build",
+    "dev": "next dev -p 3333",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
-    "@elysiajs/cors": "1.2.0",
-    "@elysiajs/swagger": "1.2.0",
-    "@solistack/auth": "workspace:*",
+    "@scalar/hono-api-reference": "0.5.159",
+    "@solistack/analytics": "workspace:*",
+    "@solistack/api": "workspace:*",
     "@solistack/db": "workspace:*",
-    "@solistack/env": "workspace:*",
-    "@solistack/ts-config": "workspace:*",
-    "elysia": "1.2.12",
-    "elysia-autoroutes": "0.5.0"
+    "@solistack/next-config": "workspace:*",
+    "@solistack/payments": "workspace:*",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@solistack/ts-config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
   }
 }

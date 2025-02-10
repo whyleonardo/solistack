@@ -1,4 +1,3 @@
+// biome-ignore lint/performance/noBarrelFile:
+// biome-ignore lint/performance/noReExportAll:
 export * from "./auth"
-export * from "./tags"
-export * from "./links"
-export * from "./links-to-tags"

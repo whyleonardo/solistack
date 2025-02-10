@@ -4,11 +4,9 @@
   "private": true,
   "type": "module",
   "exports": {
-    "./shared": "./src/shared.ts",
-    "./web": "./src/web/client.ts",
-    "./api": "./src/api/index.ts",
-    "./db": "./src/db/index.ts",
-    "./auth": "./src/auth/index.ts"
+    "./web/server": "./src/web/server.ts",
+    "./web/client": "./src/web/client.ts",
+    "./web/db": "./src/web/db.ts"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "0.11.1",
